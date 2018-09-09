@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.4.24)  9 SEP 2018 09:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.4.24)  9 SEP 2018 09:42
 entering extended mode
 **./LaTeX_Reflection_template.tex
 (LaTeX_Reflection_template.tex
@@ -647,24 +647,16 @@ LaTeX Info: Redefining \nameref on input line 36.
 \@outlinefile=\write4
 \openout4 = `LaTeX_Reflection_template.out'.
 
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
+
+(D:\Programs\MiKTeX2.9.6520\tex\latex\base\omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
 
 
 AED: lastpage setting LastPage
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--50
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--50
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--50
-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -674,33 +666,32 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{C:/Users/Austin Klum/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
 
 (LaTeX_Reflection_template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
 Package rerunfilecheck Info: File `LaTeX_Reflection_template.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: C3D105731ACBA11D161AFA0CF2664328;118.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
  ) 
 Here is how much of TeX's memory you used:
- 16124 strings out of 493312
- 300704 string characters out of 3139339
- 369693 words of memory out of 3000000
- 19411 multiletter control sequences out of 15000+200000
- 5504 words of font info for 20 fonts, out of 3000000 for 9000
+ 16139 strings out of 493312
+ 300979 string characters out of 3139339
+ 369685 words of memory out of 3000000
+ 19425 multiletter control sequences out of 15000+200000
+ 5107 words of font info for 19 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,54p,477b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Pro
-grams/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Programs/MiK
-TeX2.9.6520/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programs/MiKTeX2.9.652
-0/fonts/type1/public/amsfonts/cm/cmss10.pfb><D:/Programs/MiKTeX2.9.6520/fonts/t
-ype1/public/amsfonts/cm/cmti10.pfb>
-Output written on LaTeX_Reflection_template.pdf (1 page, 70700 bytes).
+ 55i,11n,54p,434b,327s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Pro
+grams/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programs/MiKT
+eX2.9.6520/fonts/type1/public/amsfonts/cm/cmss10.pfb><D:/Programs/MiKTeX2.9.652
+0/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on LaTeX_Reflection_template.pdf (1 page, 55253 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
+ 40 PDF objects out of 1000 (max. 8388607)
  4 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
