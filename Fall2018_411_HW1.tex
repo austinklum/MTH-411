@@ -1,0 +1,95 @@
+%This is a Latex file.
+\documentclass[12pt]{article}
+\usepackage{latexsym,fancyhdr,amsmath,amsfonts,dsfont,amsthm,amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{tikz}
+\usepackage{url}
+
+\parindent 0pt
+
+\pagestyle{fancy} \lhead{\sf MTH 411} \chead{\sf Homework \#1}
+\rhead{\sf Due: Saturday 9/17/2018} \lfoot{} \cfoot{} \rfoot{}
+
+\newcommand{\N}{\mathds{N}}
+\newcommand{\Z}{\mathds{Z}}
+\renewcommand{\vec}[1]{\overrightarrow{#1}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+
+\begin{document}
+
+{\bf Current Reading}: Sections 0 and 1. Start Section 2 if possible.
+
+\
+
+{\bf Section 0 Problems}: You should be able to work out all problems. However, you may skip \#18-22 (that all deal with the notion of {\it cardinality}). Problems \#18-19 are quite surprising, so try them if you'd like a challenge.
+
+\
+
+{\bf Section 1 Problems}: You should be able to work out all problems. Though you don't have to submit them, \#41 followed by \#38-40 form a beautiful suite. 
+
+\hrulefill
+
+\
+
+The following problems are due on 11:59pm Monday 9/17.  Submit both LaTeX and pdf files to the appropriate D2L Dropbox. 
+
+Please name the files using the following format:
+\begin{center}
+\fbox{LastName$\_$FirstName$\_$MTH411$\_$Fall2018$\_$HW$\_$01}
+\end{center}
+
+You may discuss the problems with your classmates, but your write-up must be your own.  Any problems marked with an asterisk (*) denote problems you can not discuss with anyone except for me.\\
+
+Please include the statements of the problems in your HW submissions. For the Extra problems you can copy the statements from the LaTeX file that generated this pdf. However, you will have to transcribe the remaining problems from Fraleigh.
+
+\
+
+\textbf{Section 0}: 12, 14, 26, 31, 32, 36\\
+\textbf{Section 1}: 9, 19, 28, 31, 34, 35-37\\
+\textbf{Extras}:
+\begin{enumerate}
+
+\item Define the binary relation $\sim$ on $\mathbb{R}$ in the following way: for $a,b \in \mathbb{R}$, we say that $a \sim b$ if\footnote{In a definition, an ``if'' is always an ``if and only if''.} $a-b \in \mathbb{Z}$. Prove that $\sim$ is an equivalence relation.
+
+\item Let $D=\{d \in \mathbb{R} \mid \text{there is an integer } k \text{ such that } d=2^k\}$. Let $M(D)$ be the set of $3 \times 3$ matrices with real entries whose determinant is in $D$.
+\begin{enumerate}
+\item Prove: if $A \in M(D)$, then $A^{-1} \in M(D)$
+\item Prove: if $A, B \in M(D)$, then $AB \in M(D)$
+\end{enumerate}
+
+\item Let $f : A \to B$ and $g : B \to C$. Prove: if $f$ and $g$ are bijective, then $g \circ f$ is bijective.
+
+\item Let $T$ be the set of all $3 \times 3$ matrices with real entries. Define the function $\phi : T \to \mathbb{R}$ by the rule $\phi(A) = \sqrt{2} \det(A)$. Prove $\phi$ is surjective, but not bijective.
+
+\item Let $M$ be the set of $2 \times 2$ matrices. For matrices $A$ and $B$, define the relation $\sim$ by saying that $A \sim B$ if $A$ and $B$ are similar\footnote{What did that mean again?} matrices. Prove that $\sim$ is an equivalence relation.
+
+\end{enumerate}
+
+\clearpage
+
+\begin{enumerate}
+	\item[0.12] Let $A = \{1,2,3\}$ and $B = \{2,4,6\}$ For each relation between $A$ and $B$ given as a subset of $ A \times B$, decide whether it is a function mapping $A$ into $B$. If it is function, decide whether it is one to one and whether it is onto $B$.
+	\begin{enumerate}
+		\item \{(1,4), (2,4), (3,6)\} \quad Yes, neither one to one or onto.
+		\item \{(1,4), (2,6), (3,4)\} \quad Yes, neither one to one or onto.
+		\item \{(1,6), (1,2), (1,4)\} \quad Not a function.
+		\item \{(2,2), (1,6), (3,4)\} \quad Yes, one to one and onto.
+		\item \{(1,6), (2,6), (3,6)\} \quad Yes, neither one to one and onto.
+		\item \{(1,2), (2,6), (2,4)\} \quad Not a function.
+	\end{enumerate}
+
+		\item[0.12] Let $A = \{1,2,3\}$ and $B = \{2,4,6\}$
+	\begin{equation}
+	\label{0.}
+	
+	\end{equation}
+	
+	\begin{proof}
+		
+	\end{proof}
+\end{enumerate}
+
+
+\end{document}
