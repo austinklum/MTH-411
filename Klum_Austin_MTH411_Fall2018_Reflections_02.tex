@@ -1,0 +1,78 @@
+%This is a Latex file.
+\documentclass[11pt]{article}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{dsfont}
+\usepackage{fancyhdr}
+\usepackage[margin=1in]{geometry}
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{tikz}
+\usepackage{url,hyperref}
+
+\theoremstyle{plain}
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\pagestyle{fancy} 
+\lhead{\sf Name} \chead{\sf Reflection\#X} \rhead{\sf Fall 2018 MTH 411} 
+\lfoot{} \cfoot{\thepage} \rfoot{}
+
+%% See Page 3 of Fraleigh
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\Rplus}{\mathbb{R^+}}
+\newcommand{\Qplus}{\mathbb{Q^+}}
+\newcommand{\Zplus}{\mathbb{Z^+}}
+
+\newcommand{\Cstar}{\mathbb{C^*}}
+\newcommand{\Rstar}{\mathbb{R^*}}
+\newcommand{\Qstar}{\mathbb{Q^*}}
+\newcommand{\Zstar}{\mathbb{Z^*}}
+
+
+
+\begin{document}
+
+Your weekly reflections are due every Sunday 11:59pm in the appropriate D2L Dropbox. They should consist of two sections (each of which can be further divided into subsections) as described in detail at the start of lecture 2.
+
+\section{Reflection/\href{https://en.wikipedia.org/wiki/Logbook}{Logbook}/Diary}
+
+\begin{itemize}
+\item What did you find neat/cool/beautiful/incredible/\dots?
+\item Generate questions/conjectures based on your reading of the text, my notes, and other sources (online, library, faculty, peers).
+\item Try and answer some of them! 
+\item Strive to discover connections with the math from your past.\\
+Here are some sample sentence starters: ``This reminds me of \dots from class \dots \dots because \dots'' and ``I used to think \dots but now I think \dots because \dots''.
+
+\end{itemize}
+
+\section{Letter to Dr. Fraleigh}
+
+\begin{itemize}
+\item Comments based on your reading of Fraleigh. 
+\item What did you find neat/cool/beautiful/incredible/\dots?
+\item Comments on clarity or lack thereof.
+\item Suggestions for improvement. This can be retroactive, based on future understanding and ``AHA'' moments!
+\item Did you find any typos? Were there any words or symbols used that did not make sense? Did you figure out what those words meant (either by looking through the index, or pursuing an external resource).
+\end{itemize}
+
+\clearpage
+
+\section{Reflection/Logbook/Diary}
+I found the way we describe binary operations really interesting. I liked how we used them more in the sense of functions or mappings to another point in the set of numbers. This can be seen really clearly when limiting the sets to $\Zplus$. It quite frankly is a coordinate system that points directly to the expected output. One of my generated questions is how many ways can we partition a set for any $n$ elements in a set? I wonder how people's view of math would change if we first described simply arithmetic operation in the view of binary operations. I believe teaching this way for new concepts would be easier to understand as one would have a generic way of adding more math operations into their vocabulary. If we described every mathematical idea as a function, computer scientists would be more prevalent as the basic ideas of programming is just changing your view on how to manipulate data to get a desired result.\\
+\\
+I am able to make several connections from my Computer Science background and the broad concepts used so far. Cyclic sets are used in many ways in programming. One example that keeps coming to mind is the use of ASCII Characters. ASCII Characters are a set of integers $[0,127]$ that corresponds to a character. Some of these characters are not alphabetical characters. Only $[65,90]$ and $[97,127]$ are alphabetical character, the uppercase and lowercase letters respectively. Once when I was making a Caesar Cipher, I had to think of what would happen if a number was added or subtracted and pushed out of bounds from the set of letters. The solution was to take the number that was out of bounds and subtract or add the size of the set to bring the number back in bounds for a usable result. \\
+\\
+To practice using the ideas in \textit{Make It Stick} I've been making sure to review material multiple times over a span of days. I've been trying to make more connections to what I already know to what I'm learning. One technique I've been struggling with is \textbf{Generation}. I find it difficult to come up with interesting problems that help strengthen my understanding. I'll come up with simple questions that essentially mask the exact same problem with different numbers. This is less beneficial as I just follow the same process again.
+
+\section{Letter to Fraleigh}
+Dear Dr. Fraleigh,\\
+\\
+I liked the way you explained binary operations as mappings within the set. Overall, I found this section difficult to follow. I understood the basics of the Complex Plane and the number $i$, but as I got further along into the section, into the main ideas, I found myself confused as to what was meant. Several of the key ideas of this section seemed to be merely footnotes. Addition modulo was never formally explained and Isomorphism was hardly informally explained! I also don't see the use of the Roots of Unity and how it relates to other ideas express in this section. I've reread and analyzed this section multiple times and still feel shaky on all the content being discussed.\\
+\\
+Sincerely,\\
+Austin Klum
+
+\end{document}

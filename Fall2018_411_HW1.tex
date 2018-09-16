@@ -1,6 +1,6 @@
 %This is a Latex file.
 \documentclass[12pt]{article}
-\usepackage{latexsym,fancyhdr,amsmath,amsfonts,dsfont,amsthm,amssymb}
+\usepackage{latexsym,fancyhdr,amsmath,amsfonts,dsfont,amsthm,amssymb,mathrsfs,mathtools}
 \usepackage[margin=1in]{geometry}
 \usepackage{lastpage} % Required to determine the last page for the footer
 \usepackage{tikz}
@@ -16,6 +16,7 @@
 \renewcommand{\vec}[1]{\overrightarrow{#1}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\R}{\mathbb{R}}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
 
 \begin{document}
 
@@ -37,7 +38,7 @@ The following problems are due on 11:59pm Monday 9/17.  Submit both LaTeX and pd
 
 Please name the files using the following format:
 \begin{center}
-\fbox{LastName$\_$FirstName$\_$MTH411$\_$Fall2018$\_$HW$\_$01}
+\fbox{Klum$\_$Austin$\_$MTH411$\_$Fall2018$\_$HW$\_$01}
 \end{center}
 
 You may discuss the problems with your classmates, but your write-up must be your own.  Any problems marked with an asterisk (*) denote problems you can not discuss with anyone except for me.\\
@@ -80,15 +81,41 @@ Please include the statements of the problems in your HW submissions. For the Ex
 		\item \{(1,2), (2,6), (2,4)\} \quad Not a function.
 	\end{enumerate}
 
-		\item[0.12] Let $A = \{1,2,3\}$ and $B = \{2,4,6\}$
-	\begin{equation}
-	\label{0.}
+		\item[0.14] Recall that for $a,b \in \R$ and $a \geq b$, the $\textbf{closed interval } [a,b]$ in $\R$ is defined by $[a,b] = \{x\in \R|a\leq x \leq b \}$. Show that the given intervals have the same cardinality by giving a formula for a one-to-one function $f$ mapping the first interval onto the second.
+	\begin{enumerate}
+		\item $[0,1]$ and $[0,2]$ \quad	Let the function be $f(x)=2x$
+		\item $[1,3]$ and $[5,25]$ \quad Let the function be $f(x)=10(x-1)+5$
+		\item $[a,b]$ and $[c,d]$ \quad	Let the function be $f(x)=(\frac{d-c}{b-a})(x-a)+c$
+	\end{enumerate}
 	
-	\end{equation}
+	\item[0.26] Find the number of different partitions of a set having the given number of elements.\quad 4 elements \\
+		15 different partitions.
+	\item[0.31] $x$ $\mathscr{R} $ $y$ in $\R$ if $\abs{x} = \abs{y}$
+		`
+	\item[0.32]  $x$ $\mathscr{R} $ $y$ in $\R$ if $\abs{x-y} \leq 3$
 	
-	\begin{proof}
+	\item[0.36] Let $n \in \Z^+$ and let $\sim$ be defined on $\Z$ by $r \sim s$ if and only if $r-s$ is divisible by $n$, that is, if and only if $r-s=nq$ for some $q \in \Z$.
+	\begin{enumerate}
+		\item Show that $\sim$ is an equivalence relation on $\Z$.
+		\item Show that, when restricted to the subset $\Z^+$ of $\Z$, this $\sim$ is the equivalence relation, \textit{congruence modulo n} of Example 0.20
+		\item The cells of this partition of $\Z$ are \textit{residue classes modulo n} in $\Z$. Repeat Exercise 35 for the residue classes modulo $n$ in $\Z$ rather than in $\Z^+$ using the notation $\{\cdots,\#,\#,\#,\cdots\}$ for these infinite sets.
+	\end{enumerate}
+	\item[1.09] Compute the given arithmetic expression and give the answer in the form $a + bi$ for $a,b \in \R .\quad (1-i)^5 $
 		
-	\end{proof}
+	\item[1.19] Find all solutions in $\C$ of the given equation:\quad $z^3 = -27i$
+	
+	\item[1.28] Explain why the expression $5+_6 8$ in $\R_6$ makes no sense.
+	
+	\item[1.31] Find \textit{all} solutions $x$ of the given equation: \quad $x+_7x=3$ in $\Z_7$
+	
+	\item[1.34] Find \textit{all} solutions $x$ of the given equation: \quad $x+_4x+_4x+_4x=0$ in $\Z_4$
+	
+	\item[1.35] Example 1.15 asserts that there is an isomorphism of $U_8$ with $\Z_8$ in which $\zeta = e^{i(\pi/4)} \leftrightarrow 5$ and $\zeta^2 \leftrightarrow 2$. Find the element of $\Z_8$ that corresponds to each of the remaining six elements $\zeta^m$ in $U_8$ for $m=0,3,4,5,6,$ and 7.
+	
+	\item[1.36] There is an isomorphism of $U_7$ with $\Z_7$ in which $\zeta = e^{i(2\pi/7)} \leftrightarrow 4$. Find the element in $\Z_7$ to which $\zeta^m$ must correspond for $m=0,2,3,4,5,$ and 6.
+	
+	\item[1.37] Why can there be no isomorphism of $U_6$ with $\Z_6$ in which $\zeta=e^{i(\pi/3)}$ corresponds to 4?
+	
 \end{enumerate}
 
 
