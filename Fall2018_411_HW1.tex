@@ -91,12 +91,50 @@ Please include the statements of the problems in your HW submissions. For the Ex
 	\item[0.26] Find the number of different partitions of a set having the given number of elements.\quad 4 elements \\
 		15 different partitions.
 	\item[0.31] $x$ $\mathscr{R} $ $y$ in $\R$ if $\abs{x} = \abs{y}$
-		`
-	\item[0.32]  $x$ $\mathscr{R} $ $y$ in $\R$ if $\abs{x-y} \leq 3$
-	
+		\begin{proof}
+			Let $x \in \R$, then $\abs{x} = \abs{x}$ \\
+			Thus, $\mathscr{R}$ is reflexive.\\
+			Let $x,y \in \R$, with the property that $\abs{x}=\abs{y}$ we then have $\abs{y}=\abs{x}$ \\
+			Thus, $\mathscr{R}$ is symmetric.\\
+			Let $x,y,z \in \R$ with  $\abs{x}=\abs{y}$ and $\abs{y}=\abs{z}$, then we have $\abs{x}=\abs{z}$. \\
+			Thus $\mathscr{R}$ is transitive.\\
+			Therefore, $x\mathscr{R} y$ satisfies the conditions of being an equivalence relation.		
+		\end{proof}
+		The partition arising from the equivalence relation is $\forall x \in \R, \bar{x} = \{x,-x\}$
+	\item[0.32]  $x$ $\mathscr{R} $ $y$ in $\R$ if $\abs{x-y} \leq 3$ \\ \\
+		$\abs{x-y} \leq 3$ is not an equivalence relation. 
+		\begin{proof}
+			Let $x=2,y=0,z=-2$, then $x\mathscr{R} y$ and $x\mathscr{R} y$ since $\abs{2-0}\geq 3$ and $\abs{0-(-2))\geq 3}$ But $x\mathscr{R}z$ is not true as $\abs{2-(-2)}=4\nleq3$\\
+			Therefore, $x$ $\mathscr{R} $ $y$ is not an equivalence relation.
+		\end{proof}
 	\item[0.36] Let $n \in \Z^+$ and let $\sim$ be defined on $\Z$ by $r \sim s$ if and only if $r-s$ is divisible by $n$, that is, if and only if $r-s=nq$ for some $q \in \Z$.
 	\begin{enumerate}
 		\item Show that $\sim$ is an equivalence relation on $\Z$.
+		\begin{proof}
+			Consider $r-r=0$. As 0 is divisible by all numbers $ n | r-r.$ Thus r $\sim$ r, so reflexive.\\
+			Assume $r \sim s$. Then, 
+			$$
+			\begin{aligned}
+				r \sim s &= nq \text{ for some } q \in \Z\\
+				\text{Notice.}\\
+				r-s&=-(s-r) \\
+				&\Rightarrow -s(-r)=nq\\
+				&\Rightarrow s-r = n(-q)\\
+			\end{aligned}
+			$$
+			As $n|s-r$ and $s\sim r$.\\
+			Thus, $\sim$ is symmetric.\\
+			Assume $r\sim s$ and $s \sim t$ for some $t \in \Z$. Then, $r-s=nq$ and $s-t=np$ for some $p\in \Z$. Notice $s=np+t$\\
+			Then, $r-s = nq$
+			$$\begin{aligned}
+				&\Rightarrow r-(np+t)=nq \\
+				&\Rightarrow r-np-t=nq \\
+				&\Rightarrow r-t=nq+np=n(q+p)
+			\end{aligned}$$
+			As $(q+p) \in \Z, n|r-t,$ and $r\sim t$ \\
+			Thus, $\sim$ is transitive \\
+			Therefore, $\sim$ satisfies the conditions of being and equivalence relation.
+		\end{proof}
 		\item Show that, when restricted to the subset $\Z^+$ of $\Z$, this $\sim$ is the equivalence relation, \textit{congruence modulo n} of Example 0.20
 		\item The cells of this partition of $\Z$ are \textit{residue classes modulo n} in $\Z$. Repeat Exercise 35 for the residue classes modulo $n$ in $\Z$ rather than in $\Z^+$ using the notation $\{\cdots,\#,\#,\#,\cdots\}$ for these infinite sets.
 	\end{enumerate}
