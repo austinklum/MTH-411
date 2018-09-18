@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.4.24)  17 SEP 2018 22:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.4.24)  17 SEP 2018 23:39
 entering extended mode
 **./Fall2018_411_HW1.tex
 (Fall2018_411_HW1.tex
@@ -693,6 +693,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
+Underfull \hbox (badness 10000) in paragraph at lines 290--296
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -700,7 +704,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 325--327
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
 
  []
 
@@ -711,17 +715,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 338--356
+Underfull \hbox (badness 10000) in paragraph at lines 333--351
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--363
+Underfull \hbox (badness 10000) in paragraph at lines 354--358
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--373
+Underfull \hbox (badness 10000) in paragraph at lines 362--368
 
  []
 
@@ -757,7 +761,7 @@ amsfonts/cm/cmsy10.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmti12.
 pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 <D:/Programs/MiKTeX2.9.6520/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on Fall2018_411_HW1.pdf (8 pages, 185638 bytes).
+Output written on Fall2018_411_HW1.pdf (8 pages, 185843 bytes).
 PDF statistics:
  97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

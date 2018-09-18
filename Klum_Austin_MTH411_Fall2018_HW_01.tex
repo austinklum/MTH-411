@@ -240,9 +240,9 @@ Please include the statements of the problems in your HW submissions. For the Ex
 		Then, the values are $\frac{\pi}{2},\frac{7\pi}{6},\frac{11\pi}{6}$\\
 		Putting these values back into our polar form,
 		\begin{align*}
-			3[\cos(\frac{\pi}{2})+i\sin(\frac{\pi}{2})=3i,\\
-			3[\cos(\frac{7\pi}{6})+i\sin(\frac{\pi}{2})=\frac{-3\sqrt{3}}{2}-\frac{3i}{2},\\
-			3[\cos(\frac{11\pi}{6})+i\sin(\frac{\pi}{2})=\frac{3\sqrt{3}}{2}-\frac{3i}{2},\\
+			3[\cos(\frac{\pi}{2})+i\sin(\frac{\pi}{2})]=3i,\\
+			3[\cos(\frac{7\pi}{6})+i\sin(\frac{\pi}{2})]=\frac{-3\sqrt{3}}{2}-\frac{3i}{2},\\
+			3[\cos(\frac{11\pi}{6})+i\sin(\frac{\pi}{2})]=\frac{3\sqrt{3}}{2}-\frac{3i}{2},\\
 		\end{align*}
 		Thus the solutions are $3i,\frac{-3\sqrt{3}}{2}-\frac{3i}{2},\text{and }\frac{3\sqrt{3}}{2}-\frac{3i}{2}$
 	\item[1.28] Explain why the expression $5+_6 8$ in $\R_6$ makes no sense.\\
@@ -287,27 +287,18 @@ Please include the statements of the problems in your HW submissions. For the Ex
 		Thus, there can be no isomorphism.
 	\item[Extra 1] Define the binary relation $\sim$ on $\mathbb{R}$ in the following way: for $a,b \in \mathbb{R}$, we say that $a \sim b$ if $a-b \in \mathbb{Z}$. Prove that $\sim$ is an equivalence relation.
 		\begin{proof}
-			Consider $a-a=0$. As $0 \in \R$. Thus, a $\sim$ a, so reflexive.\\
-			Assume $a \sim b$. Then, 
-			$$
-			\begin{aligned}
-			a \sim b &= q \text{ for some } q \in \R\\
-			\text{Notice.}\\
-			a-b&=-(b-a) \\
-			&\Rightarrow -b(-a)=nq\\
-			&\Rightarrow s-r = n(-q)\\
-			\end{aligned}
-			$$
-			As $n|s-r$ and $s\sim r$.\\
+				Consider $a-a=0$. As $0 \in \Z$ Thus a $\sim$ a, so reflexive.\\
+			Assume $a \sim b$. Then, \\
+			$a \sim b = q \text{ for some } q \in \Z\\$
+			$ q = a \sim b$ \\
 			Thus, $\sim$ is symmetric.\\
-			Assume $a\sim b$ and $b \sim c$ for some $c \in \Z$. Then, $a-b=nq$ and $b-c=np$ for some $p\in \Z$. Notice $s=np+t$\\
-			Then, $r-s = nq$
+			Assume $a\sim b$ and $b \sim c$ for some $c \in \Z$. Then, $a-b=q$ and $b-c=p$ for some $q,p\in \Z$. Notice $b=p+c$\\
 			$$\begin{aligned}
-			&\Rightarrow r-(np+t)=nq \\
-			&\Rightarrow r-np-t=nq \\
-			&\Rightarrow r-t=nq+np=n(q+p)
+			&\Rightarrow a-(p+c)=q \\
+			&\Rightarrow a-p-c=q \\
+			&\Rightarrow a-c=q+p
 			\end{aligned}$$
-			As $(q+p) \in \Z, n|r-t,$ and $r\sim t$ \\
+			As $(q+p) \in \Z$ and $a\sim c$ \\
 			Thus, $\sim$ is transitive \\
 			Therefore, $\sim$ satisfies the conditions of being and equivalence relation.
 		\end{proof}
@@ -324,7 +315,7 @@ Please include the statements of the problems in your HW submissions. For the Ex
 			\end{proof}
 		\item Prove: if $A, B \in M(D)$, then $AB \in M(D)$\\
 			\begin{proof}
-				Let $A,B\in D$. Then $\det(A)=2^k$ and $\det(b)=2^j$ for some $k,j\in \Z$. Notice.\\
+				Let $A,B\in M(D)$. Then $\det(A)=2^k$ and $\det(b)=2^j$ for some $k,j\in \Z$. Notice.\\
 				$\det(AB)=\det(A)\det(B)=(2^k)(2^j)=2^{kj}$\\
 				As $2^{kj} \in D$, \\
 				Therefore, $AB\in M(D)$
@@ -332,7 +323,11 @@ Please include the statements of the problems in your HW submissions. For the Ex
 	\end{enumerate}
 	
 	\item[Extra 3] Let $f : A \to B$ and $g : B \to C$. Prove: if $f$ and $g$ are bijective, then $g \circ f$ is bijective.
-	
+		\begin{proof}
+			Let $c\in C$ be arbitrary. Since $g$ is bijective, $\exists b\in B$ such that $g(b)=c$. Since $b\in B$ and $f$ is bijective, $\exists a \in A$ such that $f(a)=b$. Then,\\
+			$c=g(b)=g[f(a)]=g\circ f(a)$\\
+			Thus, $g\circ f : A \rightarrow C$ is bijective.
+		\end{proof}
 	\item[Extra 4] Let $T$ be the set of all $3 \times 3$ matrices with real entries. Define the function $\phi : T \to \mathbb{R}$ by the rule $\phi(A) = \sqrt{2} \det(A)$. Prove $\phi$ is surjective, but not bijective.
 	\begin{proof}
 		Let $y\in \R$. Let $A$ be some 3x3 matrix such that $\det(A) = \frac{y}{\sqrt{2}}$\\
