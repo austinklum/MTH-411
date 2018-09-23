@@ -1,0 +1,77 @@
+%This is a Latex file.
+\documentclass[11pt]{article}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{dsfont}
+\usepackage{fancyhdr}
+\usepackage[margin=1in]{geometry}
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{tikz}
+\usepackage{url,hyperref}
+
+\theoremstyle{plain}
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\pagestyle{fancy} 
+\lhead{\sf Austin Klum} \chead{\sf Reflection\#03} \rhead{\sf Fall 2018 MTH 411} 
+\lfoot{} \cfoot{\thepage} \rfoot{}
+
+%% See Page 3 of Fraleigh
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\Rplus}{\mathbb{R^+}}
+\newcommand{\Qplus}{\mathbb{Q^+}}
+\newcommand{\Zplus}{\mathbb{Z^+}}
+
+\newcommand{\Cstar}{\mathbb{C^*}}
+\newcommand{\Rstar}{\mathbb{R^*}}
+\newcommand{\Qstar}{\mathbb{Q^*}}
+\newcommand{\Zstar}{\mathbb{Z^*}}
+
+
+
+\begin{document}
+
+Your weekly reflections are due every Sunday 11:59pm in the appropriate D2L Dropbox. They should consist of two sections (each of which can be further divided into subsections) as described in detail at the start of lecture 2.
+
+\section{Reflection/\href{https://en.wikipedia.org/wiki/Logbook}{Logbook}/Diary}
+
+\begin{itemize}
+\item What did you find neat/cool/beautiful/incredible/\dots?
+\item Generate questions/conjectures based on your reading of the text, my notes, and other sources (online, library, faculty, peers).
+\item Try and answer some of them! 
+\item Strive to discover connections with the math from your past.\\
+Here are some sample sentence starters: ``This reminds me of \dots from class \dots \dots because \dots'' and ``I used to think \dots but now I think \dots because \dots''.
+
+\end{itemize}
+
+\section{Letter to Dr. Fraleigh}
+
+\begin{itemize}
+\item Comments based on your reading of Fraleigh. 
+\item What did you find neat/cool/beautiful/incredible/\dots?
+\item Comments on clarity or lack thereof.
+\item Suggestions for improvement. This can be retroactive, based on future understanding and ``AHA'' moments!
+\item Did you find any typos? Were there any words or symbols used that did not make sense? Did you figure out what those words meant (either by looking through the index, or pursuing an external resource).
+\end{itemize}
+
+\clearpage
+
+\section{Reflection/Logbook/Diary}
+I found homomorphisms to be interesting. The ability to manipulate data in two different realms and get the same result is fascinating. This is really cool as sometimes one realm may be easier to compute and can easily be transfered back into the desired realm. I was thinking about potential connections to computer science and other applications. It really reminded me of Fixed-Point arithmetic. Fixed-Point representation of numbers is simply having a decimal number stored as an integer. Decimal numbers take longer to compute, while integer numbers can compute faster. The trick is to essentially multiple the number of decimal places wanted to be used for precision by 10. This will convert your decimal into a integer. You can then do more computations in a faster time on the integer representation of the decimal. After you have finished performing computations, you can convert the number back into a decimal and use the results as needed. This is similar to the isomorphic property between two binary structures. There are two different realms but there is a function to link the two together. Computations can be done on either realm and the output will be as expected.
+
+\section{Letter to Fraleigh}
+Dear Dr. Fraleigh,\\
+\\
+I really enjoyed the discussion on isomorphisms and the properties they posses. I liked how you showed step by step how to prove that binary structures are isomorphic. And conversely how to prove that binary structures are not isomorphic. The proof synopsis in the exercise section is a good idea, as it makes the reader design simple, succinct ways of describing proofs. This helps make sure that I actually understand the process of the proof. I feel like a warning should be provided on how just because two binary structures share some structural properties does not necessarily conclude that the two are an isomorphism. There should be a greater stress that there could potentially be some structural property that does not hold true for both binary structures and that more testing could be needed in order to prove that they are isomorphic. Also, a typo can be found in the definition 3.7 about \textbf{isomorphism of}. While describing the homomorphism property, \[\phi(x*y)=\phi(y)*^{'}\phi(y) \text{ for all } x,y \in S\].
+Should instead use a $\phi(x)$  to be like,
+\[\phi(x*y)=\phi(x)*^{'}\phi(y) \text{ for all } x,y \in S\]
+\\
+Sincerely,\\
+Austin Klum
+
+
+\end{document}

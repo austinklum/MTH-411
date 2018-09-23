@@ -1,0 +1,375 @@
+%This is a Latex file.
+\documentclass[12pt]{article}
+\usepackage{latexsym,fancyhdr,amsmath,amsfonts,dsfont,amsthm,amssymb,mathrsfs,mathtools}
+\usepackage[margin=1in]{geometry}
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{tikz}
+\usepackage{url}
+
+\parindent 0pt
+
+\pagestyle{fancy} \lhead{\sf MTH 411} \chead{\sf Homework \#1}
+\rhead{\sf Due: Saturday 9/17/2018} \lfoot{} \cfoot{} \rfoot{}
+
+\newcommand{\N}{\mathds{N}}
+\newcommand{\Z}{\mathds{Z}}
+\renewcommand{\vec}[1]{\overrightarrow{#1}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+
+\begin{document}
+
+{\bf Current Reading}: Sections 0 and 1. Start Section 2 if possible.
+
+\
+
+{\bf Section 0 Problems}: You should be able to work out all problems. However, you may skip \#18-22 (that all deal with the notion of {\it cardinality}). Problems \#18-19 are quite surprising, so try them if you'd like a challenge.
+
+\
+
+{\bf Section 1 Problems}: You should be able to work out all problems. Though you don't have to submit them, \#41 followed by \#38-40 form a beautiful suite. 
+
+\hrulefill
+
+\
+
+The following problems are due on 11:59pm Monday 9/17.  Submit both LaTeX and pdf files to the appropriate D2L Dropbox. 
+
+Please name the files using the following format:
+\begin{center}
+\fbox{Klum$\_$Austin$\_$MTH411$\_$Fall2018$\_$HW$\_$01}
+\end{center}
+
+You may discuss the problems with your classmates, but your write-up must be your own.  Any problems marked with an asterisk (*) denote problems you can not discuss with anyone except for me.\\
+
+Please include the statements of the problems in your HW submissions. For the Extra problems you can copy the statements from the LaTeX file that generated this pdf. However, you will have to transcribe the remaining problems from Fraleigh.
+
+\
+
+\textbf{Section 0}: 12, 14, 26, 31, 32, 36\\
+\textbf{Section 1}: 9, 19, 28, 31, 34, 35-37\\
+\textbf{Extras}:
+\begin{enumerate}
+
+\item Define the binary relation $\sim$ on $\mathbb{R}$ in the following way: for $a,b \in \mathbb{R}$, we say that $a \sim b$ if\footnote{In a definition, an ``if'' is always an ``if and only if''.} $a-b \in \mathbb{Z}$. Prove that $\sim$ is an equivalence relation.
+
+\item Let $D=\{d \in \mathbb{R} \mid \text{there is an integer } k \text{ such that } d=2^k\}$. Let $M(D)$ be the set of $3 \times 3$ matrices with real entries whose determinant is in $D$.
+\begin{enumerate}
+\item Prove: if $A \in M(D)$, then $A^{-1} \in M(D)$
+\item Prove: if $A, B \in M(D)$, then $AB \in M(D)$
+\end{enumerate}
+
+\item Let $f : A \to B$ and $g : B \to C$. Prove: if $f$ and $g$ are bijective, then $g \circ f$ is bijective.
+
+\item Let $T$ be the set of all $3 \times 3$ matrices with real entries. Define the function $\phi : T \to \mathbb{R}$ by the rule $\phi(A) = \sqrt{2} \det(A)$. Prove $\phi$ is surjective, but not bijective.
+
+\item Let $M$ be the set of $2 \times 2$ matrices. For matrices $A$ and $B$, define the relation $\sim$ by saying that $A \sim B$ if $A$ and $B$ are similar\footnote{What did that mean again?} matrices. Prove that $\sim$ is an equivalence relation.
+
+\end{enumerate}
+
+\clearpage
+
+\begin{enumerate}
+	\item[0.12] Let $A = \{1,2,3\}$ and $B = \{2,4,6\}$ For each relation between $A$ and $B$ given as a subset of $ A \times B$, decide whether it is a function mapping $A$ into $B$. If it is function, decide whether it is one to one and whether it is onto $B$.
+	\begin{enumerate}
+		\item \{(1,4), (2,4), (3,6)\} \quad Yes, neither one to one or onto.
+		\item \{(1,4), (2,6), (3,4)\} \quad Yes, neither one to one or onto.
+		\item \{(1,6), (1,2), (1,4)\} \quad Not a function.
+		\item \{(2,2), (1,6), (3,4)\} \quad Yes, one to one and onto.
+		\item \{(1,6), (2,6), (3,6)\} \quad Yes, neither one to one and onto.
+		\item \{(1,2), (2,6), (2,4)\} \quad Not a function.
+	\end{enumerate}
+
+		\item[0.14] Recall that for $a,b \in \R$ and $a \geq b$, the $\textbf{closed interval } [a,b]$ in $\R$ is defined by $[a,b] = \{x\in \R|a\leq x \leq b \}$. Show that the given intervals have the same cardinality by giving a formula for a one-to-one function $f$ mapping the first interval onto the second.
+	\begin{enumerate}
+		\item $[0,1]$ and $[0,2]$ \quad	Let the function be $f(x)=2x$
+		\item $[1,3]$ and $[5,25]$ \quad Let the function be $f(x)=10(x-1)+5$
+		\item $[a,b]$ and $[c,d]$ \quad	Let the function be $f(x)=(\frac{d-c}{b-a})(x-a)+c$
+	\end{enumerate}
+	
+	\item[0.26] Find the number of different partitions of a set having the given number of elements.\quad 4 elements \\
+		15 different partitions.
+		\begin{align*}
+			\textbf{1 cell} \\
+				&\{\{1,2,3,4\}\}\\
+			\textbf{2 cells}\\
+				&\{\{1,2,3\},\{4\}\},\\
+				& \{\{1,2,4\},\{3\}\},\\
+				& \{\{1,3,4\},\{2\}\},\\
+				& \{\{2,3,4\},\{1\}\},\\
+				& \{\{1,2\},\{3,4\}\},\\
+				&\{\{1,3\},\{2,4\}\},\\
+				&\{\{1,4\},\{2,3\}\}\\
+			\textbf{3 cells}\\
+				&\{\{1,2\},\{3\},\{4\}\},\\
+				&\{\{1,3\},\{2\},\{4\}\},\\
+				&\{\{1,4\},\{2\},\{3\}\}\\
+				&\{\{1\},\{2\},\{3,4\}\},\\
+				&\{\{1\},\{3\},\{2,4\}\},\\
+				&\{\{1\},\{4\},\{2,3\}\}\\
+			\textbf{4 cells}\\
+				&\{\{1\},\{2\},\{3\},\{4\}\}
+		\end{align*}
+	\item[0.31] $x$ $\mathscr{R} $ $y$ in $\R$ if $\abs{x} = \abs{y}$
+		\begin{proof}
+			Let $x \in \R$, then $\abs{x} = \abs{x}$ \\
+			Thus, $\mathscr{R}$ is reflexive.\\
+			Let $x,y \in \R$, with the property that $\abs{x}=\abs{y}$ we then have $\abs{y}=\abs{x}$ \\
+			Thus, $\mathscr{R}$ is symmetric.\\
+			Let $x,y,z \in \R$ with  $\abs{x}=\abs{y}$ and $\abs{y}=\abs{z}$, then we have $\abs{x}=\abs{z}$. \\
+			Thus $\mathscr{R}$ is transitive.\\
+			Therefore, $x\mathscr{R} y$ satisfies the conditions of being an equivalence relation.		
+		\end{proof}
+		The partition arising from the equivalence relation is $\forall x \in \R, \bar{x} = \{x,-x\}$
+	\item[0.32]  $x$ $\mathscr{R} $ $y$ in $\R$ if $\abs{x-y} \leq 3$ \\ \\
+		$\abs{x-y} \leq 3$ is not an equivalence relation. 
+		\begin{proof}
+			Let $x=2,y=0,z=-2$, then $x\mathscr{R} y$ and $x\mathscr{R} y$ since $\abs{2-0}\geq 3$ and $\abs{0-(-2))\geq 3}$ But $x\mathscr{R}z$ is not true as $\abs{2-(-2)}=4\nleq3$\\
+			Therefore, $x$ $\mathscr{R} $ $y$ is not an equivalence relation.
+		\end{proof}
+	\item[0.36] Let $n \in \Z^+$ and let $\sim$ be defined on $\Z$ by $r \sim s$ if and only if $r-s$ is divisible by $n$, that is, if and only if $r-s=nq$ for some $q \in \Z$.
+	\begin{enumerate}
+		\item Show that $\sim$ is an equivalence relation on $\Z$.
+		\begin{proof}
+			Consider $r-r=0$. As 0 is divisible by all numbers $ n | r-r.$ Thus r $\sim$ r, so reflexive.\\
+			Assume $r \sim s$. Then, 
+			$$
+			\begin{aligned}
+				r \sim s &= nq \text{ for some } q \in \Z\\
+				\text{Notice.}\\
+				r-s&=-(s-r) \\
+				&\Rightarrow -s(-r)=nq\\
+				&\Rightarrow s-r = n(-q)\\
+			\end{aligned}
+			$$
+			As $n|s-r$ and $s\sim r$.\\
+			Thus, $\sim$ is symmetric.\\
+			Assume $r\sim s$ and $s \sim t$ for some $t \in \Z$. Then, $r-s=nq$ and $s-t=np$ for some $p\in \Z$. Notice $s=np+t$\\
+			Then, $r-s = nq$
+			$$\begin{aligned}
+				&\Rightarrow r-(np+t)=nq \\
+				&\Rightarrow r-np-t=nq \\
+				&\Rightarrow r-t=nq+np=n(q+p)
+			\end{aligned}$$
+			As $(q+p) \in \Z, n|r-t,$ and $r\sim t$ \\
+			Thus, $\sim$ is transitive \\
+			Therefore, $\sim$ satisfies the conditions of being and equivalence relation.
+		\end{proof}
+		\item Show that, when restricted to the subset $\Z^+$ of $\Z$, this $\sim$ is the equivalence relation, \textit{congruence modulo n} of Example 0.20
+		Notice.\\
+		$r=na+r_1$ and $s=nb+r_2$ for some $a,b \in \Z$ and $0 \leq r_1,r_2 < n$. Then,
+		$$\begin{aligned}
+			r-s=nq &\Rightarrow (na+r_1)-(nb+r_2)=nq\\
+				   &\Rightarrow (na-nb)+(r_1-r_2)=nq\\
+				   &\Rightarrow r_1-r_2=n(q-a+b)\\
+				   &\Rightarrow n | r_1-r_2
+		\end{aligned}$$
+		As $0 \leq r_1,r_2 <n$, we know $-n<r_1,r_2<n$\\
+		Since $r_1-r_2=0 \Rightarrow r_1=r_2$\\
+		As $r\sim s$ implies $r$ and $s$ have the same remainder when divided by $n$, $r \equiv_n s$\\
+		Thus, the two relations are the same.
+		\item The cells of this partition of $\Z$ are \textit{residue classes modulo n} in $\Z$. Repeat Exercise 35 for the residue classes modulo $n$ in $\Z$ rather than in $\Z^+$ using the notation $\{\cdots,\#,\#,\#,\cdots\}$ for these infinite sets.
+		
+		\begin{align*}
+			\text{When } n=2 \\
+			& \bar{0}=\{\cdots,-2,0,2,\cdots\}\\
+			& \bar{1}=\{\cdots,-1,1,3,\cdots\}\\
+			\text{When } n=3 \\
+			& \bar{0}=\{\cdots,-3,0,3,\cdots\}\\
+			& \bar{1}=\{\cdots,-1,1,4,\cdots\}\\
+			& \bar{2}=\{\cdots,-2,2,5,\cdots\}\\
+			\text{When } n=5 \\
+			& \bar{0}=\{\cdots,-5,0,5,\cdots\}\\
+			& \bar{1}=\{\cdots,-1,1,6,\cdots\}\\
+			& \bar{2}=\{\cdots,-2,2,7,\cdots\}\\
+			& \bar{3}=\{\cdots,-3,3,8,\cdots\}\\
+			& \bar{4}=\{\cdots,-4,4,9,\cdots\}\\
+		\end{align*}
+	\end{enumerate}
+	\item[1.09] Compute the given arithmetic expression and give the answer in the form $a + bi$ for $a,b \in \R .\quad (1-i)^5 $
+		\begin{align*}
+			(1-i)^5 &= (1+(-i))^5 \\
+			&= \sum_{k=0}^{5} \begin{pmatrix}
+								5\\
+								k
+							 \end{pmatrix} 1^{n-k}(-i)^k\\
+			&= \sum_{k=0}^{5} \begin{pmatrix}
+								5\\
+								k
+							 \end{pmatrix} (-i)^k\\
+			&= \begin{pmatrix}
+					5\\
+					0
+				\end{pmatrix} (-i)^0 + 
+				\begin{pmatrix}
+				5\\
+				1
+				\end{pmatrix} (-i)^1 + 
+				\begin{pmatrix}
+				5\\
+				2
+				\end{pmatrix} (-i)^2 + 
+				\begin{pmatrix}
+				5\\
+				3
+				\end{pmatrix} (-i)^3 + 
+				\begin{pmatrix}
+				5\\
+				4
+				\end{pmatrix} (-i)^4 + 
+				\begin{pmatrix}
+				5\\
+				5
+				\end{pmatrix} (-i)^5 \\
+			&= 1\cdot 1 + 5 \cdot (-i) + 10 \cdot (-1)+10\cdot i + 5 \cdot 1 + 1 \cdot (-i)\\
+			&= 1-5i+10+10i+5-i\\
+			&= -4+4i		
+		\end{align*}
+	\item[1.19] Find all solutions in $\C$ of the given equation:\quad $z^3 = -27i$\\
+		Notice \\
+		$z^3 = \abs{z}^3[\cos(3\theta)+i\sin(3\theta)]\\
+		-27i = -3^3 = 3^3(0-i) \\
+		$
+		Then,\\
+		$\abs{z}^3[\cos(3\theta)+i\sin(3\theta)] = 3^3(0-i)$\\
+		\\
+		$\abs{z}=3$ as must have $\abs{z}^3 = 3^3$ and $\cos(3\theta)=0$ and $\sin(3\theta)=1$\\
+		Then $3\theta - \frac{3\pi}{2}+2\pi n$ for all $n\in \Z$\\
+		Therefore, $\theta = \frac{\pi}{2}+\frac{2\pi n}{3}$ for all $n \in \Z$\\
+		Then, the values are $\frac{\pi}{2},\frac{7\pi}{6},\frac{11\pi}{6}$\\
+		Putting these values back into our polar form,
+		\begin{align*}
+			3[\cos(\frac{\pi}{2})+i\sin(\frac{\pi}{2})]=3i,\\
+			3[\cos(\frac{7\pi}{6})+i\sin(\frac{\pi}{2})]=\frac{-3\sqrt{3}}{2}-\frac{3i}{2},\\
+			3[\cos(\frac{11\pi}{6})+i\sin(\frac{\pi}{2})]=\frac{3\sqrt{3}}{2}-\frac{3i}{2},\\
+		\end{align*}
+		Thus the solutions are $3i,\frac{-3\sqrt{3}}{2}-\frac{3i}{2},\text{and }\frac{3\sqrt{3}}{2}-\frac{3i}{2}$
+	\item[1.28] Explain why the expression $5+_6 8$ in $\R_6$ makes no sense.\\
+	As addition modulo is defined as $+_c$ on $\R_c = \{x\in \R | 0 \leq x < c \}$ for some $c \in \R$\\
+	But $8 \notin \R_6$, so $5+_6 8$ makes no sense. 
+	\item[1.31] Find \textit{all} solutions $x$ of the given equation: \quad $x+_7x=3$ in $\Z_7$\\
+		\begin{align*}
+			x+_7x=3\\
+			x+x-7=3\\
+		\end{align*}
+		Thus, $x=5$
+	
+	\item[1.34] Find \textit{all} solutions $x$ of the given equation: \quad $x+_4x+_4x+_4x=0$ in $\Z_4$
+		\begin{align*}
+			0+_4 0+_4 0+_4 0 = 0 \\
+			1+_4 1+_4 1+_4 1 = 0 \\
+			2+_4 2+_4 2+_4 2 = 0 \\
+			3+_4 3+_4 3+_4 3 = 0 \\
+		\end{align*}
+		Thus, $x = 0,1,2,3$ are solutions
+	\item[1.35] Example 1.15 asserts that there is an isomorphism of $U_8$ with $\Z_8$ in which $\zeta = e^{i(\pi/4)} \leftrightarrow 5$ and $\zeta^2 \leftrightarrow 2$. Find the element of $\Z_8$ that corresponds to each of the remaining six elements $\zeta^m$ in $U_8$ for $m=0,3,4,5,6,$ and 7.
+		$$\begin{aligned}
+			\zeta^0 \leftrightarrow 0\\
+			\zeta^3 = \zeta^2\zeta^1 \leftrightarrow 2+_8 5 = 7\\
+			\zeta^4 = \zeta^2\zeta^2 \leftrightarrow 2+_8 2 = 4\\
+			\zeta^5 = \zeta^4\zeta^1 = \zeta^2\zeta^2\zeta^1 \leftrightarrow 2\cdot 2+_8 5 = 9 -8=1\\
+			\zeta^6 = \zeta^3\zeta^3 \leftrightarrow 7+_8 7 = 14 - 8 = 6\\
+			\zeta^7 = \zeta^4\zeta^3 \leftrightarrow 4+_8 7 = 11 - 8 = 3\\
+		\end{aligned}$$
+	\item[1.36] There is an isomorphism of $U_7$ with $\Z_7$ in which $\zeta = e^{i(2\pi/7)} \leftrightarrow 4$. Find the element in $\Z_7$ to which $\zeta^m$ must correspond for $m=0,2,3,4,5,$ and 6.
+		$$\begin{aligned}
+		\zeta^0 \leftrightarrow 0\\
+		\zeta^2 = \zeta^1\zeta^1 \leftrightarrow 4+_7 4 = 8 - 7 = 1\\
+		\zeta^3 = \zeta^2\zeta^1 \leftrightarrow 1+_7 4 = 5\\
+		\zeta^4 = \zeta^2\zeta^2 \leftrightarrow 1+_7 1 = 2\\
+		\zeta^5 = \zeta^3\zeta^2 \leftrightarrow 5+_7 1 = 6\\
+		\zeta^6 = \zeta^3\zeta^3 \leftrightarrow 5+_7 5 = 10 - 7 = 3\\
+		\end{aligned}$$
+	\item[1.37] Why can there be no isomorphism of $U_6$ with $\Z_6$ in which $\zeta=e^{i(\pi/3)}$ corresponds to 4?\\
+		As $\zeta \leftrightarrow 4$, then $\zeta^2 \leftrightarrow 2, \zeta^3 \leftrightarrow 0, \text{and } \zeta^4 \leftrightarrow 4$ \\
+		Which would be no longer one to one. \\
+		Thus, there can be no isomorphism.
+	\item[Extra 1] Define the binary relation $\sim$ on $\mathbb{R}$ in the following way: for $a,b \in \mathbb{R}$, we say that $a \sim b$ if $a-b \in \mathbb{Z}$. Prove that $\sim$ is an equivalence relation.
+		\begin{proof}
+				Consider $a-a=0$. As $0 \in \Z$ Thus a $\sim$ a, so reflexive.\\
+			Assume $a \sim b$. Then, \\
+			$a \sim b = q \text{ for some } q \in \Z\\$
+			$ q = a \sim b$ \\
+			Thus, $\sim$ is symmetric.\\
+			Assume $a\sim b$ and $b \sim c$ for some $c \in \Z$. Then, $a-b=q$ and $b-c=p$ for some $q,p\in \Z$. Notice $b=p+c$\\
+			$$\begin{aligned}
+			&\Rightarrow a-(p+c)=q \\
+			&\Rightarrow a-p-c=q \\
+			&\Rightarrow a-c=q+p
+			\end{aligned}$$
+			As $(q+p) \in \Z$ and $a\sim c$ \\
+			Thus, $\sim$ is transitive \\
+			Therefore, $\sim$ satisfies the conditions of being and equivalence relation.
+		\end{proof}
+	\item[Extra 2] Let $D=\{d \in \mathbb{R} \mid \text{there is an integer } k \text{ such that } d=2^k\}$. Let $M(D)$ be the set of $3 \times 3$ matrices with real entries whose determinant is in $D$.
+	\begin{enumerate}
+		\item Prove: if $A \in M(D)$, then $A^{-1} \in M(D)$
+			\begin{proof}
+				Let $A\in M(D)$. Then, $\det(A)=2^k$ for some $k\in \Z$\\
+				As $\det(A) \ne 0$ there must exist an Invertible Matrix, $A^{-1}$.\\
+				Notice.\\
+				$\det(A^{-1})=\frac{1}{\det(A)}=\frac{1}{2^k}$\\
+				As $\frac{1}{2^k} \in D$\\
+				Therefore, $A^{-1}\in M(D)$
+			\end{proof}
+		\item Prove: if $A, B \in M(D)$, then $AB \in M(D)$\\
+			\begin{proof}
+				Let $A,B\in M(D)$. Then $\det(A)=2^k$ and $\det(b)=2^j$ for some $k,j\in \Z$. Notice.\\
+				$\det(AB)=\det(A)\det(B)=(2^k)(2^j)=2^{kj}$\\
+				As $2^{kj} \in D$, \\
+				Therefore, $AB\in M(D)$
+			\end{proof}
+	\end{enumerate}
+	
+	\item[Extra 3] Let $f : A \to B$ and $g : B \to C$. Prove: if $f$ and $g$ are bijective, then $g \circ f$ is bijective.
+		\begin{proof}
+			Let $c\in C$ be arbitrary. Since $g$ is bijective, $\exists b\in B$ such that $g(b)=c$. Since $b\in B$ and $f$ is bijective, $\exists a \in A$ such that $f(a)=b$. Then,\\
+			$c=g(b)=g[f(a)]=g\circ f(a)$\\
+			Thus, $g\circ f : A \rightarrow C$ is bijective.
+		\end{proof}
+	\item[Extra 4] Let $T$ be the set of all $3 \times 3$ matrices with real entries. Define the function $\phi : T \to \mathbb{R}$ by the rule $\phi(A) = \sqrt{2} \det(A)$. Prove $\phi$ is surjective, but not bijective.
+	\begin{proof}
+		Let $y\in \R$. Let $A$ be some 3x3 matrix such that $\det(A) = \frac{y}{\sqrt{2}}$\\
+		Then, $\phi(A) = y$\\
+		As $A$ is valid for all possible $y$\\
+		T must be surjective\\
+		\\
+		Let $X:= \begin{bmatrix}
+		1 & 2 & 3 \\
+		0 & -4 & 1 \\
+		0 & 3 & -1 
+		\end{bmatrix}  $ and 
+		let $Y:= \begin{bmatrix}
+		1 & 11 & 14 \\
+		0 & -1 & -1 \\
+		0 & 3 & -4 
+		\end{bmatrix}$\\
+		Notice.\\
+		$\det(X)=\det(Y)=1$\\
+		As $\phi(X) =\phi(Y) = \sqrt(2)$ is a mapping to the same place, the function is not injective, and thus, not bijective.
+	\end{proof}
+	\item[Extra 5] Let $M$ be the set of $2 \times 2$ matrices. For matrices $A$ and $B$, define the relation $\sim$ by saying that $A \sim B$ if $A$ and $B$ are similar matrices. Prove that $\sim$ is an equivalence relation.
+	\begin{proof}
+		Let $A$ and $B$ be similar matrices.
+		$A = I^{-1}AI$, Thus $A \sim A$, so $\sim$ is reflexive.\\
+		\\
+		$B = P^{-1}AP$
+		\begin{align*}
+				PBP^{-1}&=PP^{-1}APP^{-1}\\
+						&=IAI\\
+						&=A
+		\end{align*}
+		Thus, $A\sim B$ and $B\sim A$, so $\sim$ is symmetric\\
+		\\
+		$B=P_1^{-1}AP_1$ and $C=P_2^{-1}BP_2$. Then,\\
+		$C=P_2^{-1}P_1^{-1}AP_1P_2$\\
+		As the product of two invertible matrices is itself invertible, $\sim$ is transitive.
+
+		
+	\end{proof}
+	
+\end{enumerate}
+
+
+\end{document}

@@ -1,0 +1,171 @@
+%This is a Latex file.
+\documentclass[11pt]{article}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{dsfont}
+\usepackage{fancyhdr}
+\usepackage[margin=1in]{geometry}
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{tikz}
+\usepackage{url}
+
+\theoremstyle{plain}
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\pagestyle{fancy} 
+\lhead{\sf Austin Klum} \chead{\sf HW \#02} \rhead{\sf Fall 2018 MTH 411} 
+\lfoot{} \cfoot{\thepage} \rfoot{}
+
+%% See Page 3 of Fraleigh
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Rplus}{\mathbb{R^+}}
+\newcommand{\Qplus}{\mathbb{Q^+}}
+\newcommand{\Zplus}{\mathbb{Z^+}}
+\newcommand{\Cstar}{\mathbb{C^*}}
+\newcommand{\Rstar}{\mathbb{R^*}}
+\newcommand{\Qstar}{\mathbb{Q^*}}
+\newcommand{\Zstar}{\mathbb{Z^*}}
+\begin{document}
+\begin{enumerate}
+\item[\textbf{Section 2}]
+
+    For 2.9 - 2.11, determine whether the binary operation $*$ defined is commutative and associative.
+    \begin{enumerate}
+        \item[\textbf{2.9}] $*$ defined on $\Q$ by letting $a*b = ab/2$.
+        
+        \item[\textbf{2.10}] $*$ defined on $\Zplus$ by letting $a*b = 2^{ab}$ 
+        	\begin{enumerate}
+        		\item [Communative:]
+        			Let $a,b \in \Zplus$. Then,
+        				\[a*b=2^{ab}=2^{ba}=b*a\]
+        			Therefore, $*$ is commutative.
+        		\item[Associative:]
+        			Let $a,b,c \in \Zplus$ Then,
+        				\[(a*b)*c = 2^{ab}*c = 2^{abc}\]
+        				\[a*(b*c)= a*2^{bc}=2^{abc}\]
+        			Therefore, $*$ is associative.
+        	\end{enumerate}
+        	
+        \item[\textbf{2.11}] $*$ defined on $\Zplus$ by letting $a * b = a^b$
+        
+    \end{enumerate}
+    For 2.14 - 2.16, correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form for publication.
+    \begin{enumerate}
+       
+        \item[\textbf{2.14}] A binary operation $*$ is \textit{commutative} if and onlt if $a*b = b*a$.
+        
+        \item[\textbf{2.15}] A binary operation $*$ on a set $S$ is \textit{associative} if and only if, for all $a,b,c\in S$, we have $(b*c)*a = b*(c*a)$.
+        
+        \item[\textbf{2.16}] A subset $H$ of a set $S$ is \textit{closed} under a binary operation $*$ on $S$ if $(a*b) \in H$ for all $a,b \in S$.
+        
+    \end{enumerate}
+    
+    For 2.18, 2.20, and 2.22, determine whether the definition of $*$ does five a binary operation on the set. In the event that $*$ is not a binary operation, state whether Condition 1, Condition 2, or both of these conditions on page 24 are violated.\\
+    
+    Condition 1: Exactly one element is assigned to each possible ordered pair of elements of $S$.\\
+    Condition 2: For each ordered pair of elements of $S$, the element assigned to it is again in $S$.
+    
+    \begin{enumerate}
+
+        \item[\textbf{2.18}] On $\Zplus$, define $*$ by letting $a*b = a^b$
+        
+        \item[\textbf{2.20}] On $\Zplus$, define $*$ by letting $a * b = c$ where $c$ is the smallest integer greater than $a$ and $b$.
+        
+        \item[\textbf{2.22}] On $\Zplus$, define $*$ by letting $a * b = c$ where $c$ is the largest integer less than the product of $a$ and $b$.
+        
+        \item[\textbf{2.26}] Prove that if $*$ is an associative and commutative binary operation on a set $S$, then \[ (a*b)*(c*d) = [(d*c)*a)]*b \] for all $a,b,c,d \in S$. Assume the associative law only for triples as in the definition, that is, assume only \[(x*y)*z = x*(y*z)\] for all $x,y,z \in S$.
+        
+        \item[\textbf{2.36}] Suppose that $*$ us an \textit{associative binary} operation on a set $S$. Show that $H = \{a \in \S | a*x = x*a \text{ for all } x \in S\}$. Show that $H$ is closed under $*$. 
+        
+        \item[\textbf{2.37}] Suppose that $*$ is an associative and commutative binary operation on a set $S$. Show that $H = \{a \in \S | a*a = a\}$ is closed under $*$. (check sheet for hint).
+        
+        
+    \end{enumerate}
+    
+    
+\item[\textbf{Section 3}]
+    For 3.6-3.10, determine whether the given map $\phi$ is an isomorphism of the first binary structure with the second. If not an isomorphism, why not?
+    
+    \begin{enumerate}
+        \item[\textbf{3.6}] $<\Q,\cdot>$ with $<\Q,\cdot>$ where $\phi (x) = x^2$ for $x \in \Q$.
+        	Not bijective thus, not isomorphic. (not onto) proof this more.
+        \item[\textbf{3.7}] $<\R,\cdot>$ with $<\R,\cdot>$ where $\phi (x) = x^3$ for $x \in \R$.
+        	\begin{enumerate}
+        		\item[Injective:] Let $a,b \in \R$. Notice, $\phi(a) = \phi(b)$ which implies  $a^3 = b^3 \rightarrow a=b$.
+        		\item[Surjective:] Let $b \in \R$. Then. there must exist an arbitrary $a$ such that $\phi(a) = b$. Let $a=\sqrt[3]{b}.$ Then,
+        	\end{enumerate}
+        	
+			Let $a,b \in \R \text{. } \phi(a * b) = (ab)^3$ and conversely $\phi(a)*\phi(b) = a^3*b^3 = (ab)^3$ \\
+			Therefore, $\phi$ is a homomorphism.
+			As $\phi$ is a bijective homomorphism, $\phi$ must be isomorphic.
+        \item[\textbf{3.8}] $<M_2(\R),\cdot>$ with $<\R,\cdot>$ where $\phi(A)$ is is the determinate of matrix $A$.
+        
+        \item[\textbf{3.9}] $<M_1(\R),\cdot>$ with $<\R,\cdot>$ where $\phi(A)$ is is the determinate of matrix $A$.
+        
+        \item[\textbf{3.10}] $<\R,+>$ with $<\R^+,\cdot>$ where $\phi (r) = .5^r$ for $r \in \R$.
+    
+    \end{enumerate}
+    
+    For 3.11 - 3.13 let $F$ be the set of all functions $f$ mapping $\R$ into $\R$ that have derivatives of all orders. Determine if they are isomorphism. Why or why not?
+    
+    \begin{enumerate}
+        
+        \item[\textbf{3.11}] $<F,+>$ with $<F,+>$ where $\phi(f) = f'$, the derivative of $f$.
+        
+        \item[\textbf{3.12}] $<F,+>$ with $<\R,+>$ where $\phi(f) = f'(0)$
+        
+        \item[\textbf{3.13}] $<F,+>$ with $<F,+>$ where $\phi(f)(x) = \int_0^xf(t)dt $ 
+        
+        \item[\textbf{3.16}] The map $\phi: \Z \rightarrow \Z$ defined by $\phi (n) = n+1$ for $n \in \Z$ is one to one and onto $\Z$. Give the definition of a binary operation $*$ on $\Z$ such that $\phi$ is an isomorphic mapping.
+           \begin{enumerate}
+                \item[\textbf{3.16(a)}]
+                $<\Z,+>$ onto $<\Z,\ast>$
+                
+                Define $\ast$ have the operation $m\ast n = m + n - 1$. Let $a,b \in \Z$. Observe. 
+                \[\phi(a+b) = (a+b) + 1 = (a + 1) + (b + 1) - 1 = \phi(a) + \phi(b) - 1 = \phi(a)\ast \phi(b)\]
+                Thus, there exists a homomorphism 
+                \item[\textbf{3.16(b)}]
+                $<\Z,\ast>$ onto $<\Z,+>$
+                
+            \end{enumerate}
+        
+        \item[\textbf{3.17}] The map $\phi: \Z \rightarrow \Z$ defined by $\phi(n)=n+1$ for $n \in \Z$ is one to one and onto $\Z$. Give the definition of a binary operation $\ast$ on $\Z$ such that $\phi$ is an isomorphic mapping.
+            \begin{enumerate}
+                \item[\textbf{3.17(a)}]
+                $<\Z,\cdot>$ onto $<\Z,\ast>$
+                \item[\textbf{3.17(b)}]
+                $<\Z,\ast>$ onto $<\Z,\cdot>$
+            \end{enumerate}
+        
+        \item[\textbf{3.18}] The map $\phi: \Q \rightarrow \Q$ defined by $\phi(x)=3x-1$ for $x \in \Q$ is one to one and onto $\Q$. Give the definition of a binary operation $\ast$ on $\Q$ such that $\phi$ is an isomorphic mapping. Give the identity element.
+            \begin{enumerate}
+                \item[\textbf{3.18(a)}]
+                $<\Q,+>$ onto $<\Q,\ast>$
+                \item[\textbf{3.18(b)}]
+                $<\Q,\ast>$ onto $<\Q,+>$
+                
+            \end{enumerate}
+        
+        
+        For 2.21,2.22 correct the definition of the italicized term without  reference to the text, if correction is needed, so that it is in a form acceptable for publication.
+        
+        \item[\textbf{3.21}] A function $\phi:S \rightarrow S'$ is an \textit{isomorphism} if and only if $\phi(a\ast b) = \phi(a) \ast \phi(b)$
+        
+        \item[\textbf{3.22}] Let $\ast$ be a binary operation on a set $S$. An element $e$ of $S$ with the property $s \ast e = s = e  \ast s$ is an \textit{identity element for} $\ast$ for all $s \in S$.
+        
+        \item[\textbf{3.31}] Give a careful proof for a skeptic that the indicated property of a binary structure $<S,\ast>$ is indeed a structural property. (In Theorem 3.14 we did this for the property, "There is an identity element for $\ast$."). For each $c \in S$, the equation $x \ast x = c$ has a solution $x$ in $S$.
+        
+        \item[\textbf{3.33}] Let $H$ be the subset of $M_2(\R)$ consisting of all matrices of the form for $a,b \in \R$. Exercise 23 of Section 2 shows that $H$ is closed under both matrix addition and multiplication.
+        
+        \begin{enumerate}
+            \item[\textbf{3.33(a)}] Show that $<\C,+>$ is isomorphic to $<H,+>$ 
+            \item[\textbf{3.33(b)}] Show that $<\C,\cdot>$ is isomorphic to $<H,\cdot>$
+        \end{enumerate}
+    \end{enumerate}
+  
+
+\end{enumerate}
+\end{document}
