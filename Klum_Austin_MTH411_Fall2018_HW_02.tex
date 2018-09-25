@@ -294,27 +294,48 @@
 						\phi(m * n) &= (m*n)+1\\
 						&= (m+n+1)+1\\
 						&= m + n + 1 + 1 -1\\
-						&= m+n+1
+						&= m+n+2
 					\end{align*}
-					Thus, $ \phi(m+n)=\phi(m)*\phi(n) $ which makes $ \phi $ homomorphic.\\
+					Thus, $ \phi(m*n)=\phi(m)+\phi(n) $ which makes $ \phi $ homomorphic.\\
 					Therefore, $ \phi $ is an isomorphism.\\
 					\\
-					As 1 is the identity element of $\Z$  under multiplication, and $ \phi $ is an isomorphism, $ \phi(1) $ maps to the identity element of $ \Z $ under $ * $. $ \phi(1) = 1+1=2 $. Therefore, the identity element of $ \Z $ under $ * $ is 2
+					As 1 is the identity element of $\Z$  under multiplication, and $ \phi $ is an isomorphism, $ \phi $ must map to the identity element of $ \Z $ under $ * $ to 1. Let $i$ be the identity of $<\Z,*>$. $ \phi(i) = 1 = i +1 $. Thus, $i=0$ Therefore, the identity element of $ \Z $ under $ * $ is 0
 			\end{enumerate}
 			
 			\item[3.17] The map $\phi: \Z \rightarrow \Z$ defined by $\phi(n)=n+1$ for $n \in \Z$ is one to one and onto $\Z$. Give the definition of a binary operation $\ast$ on $\Z$ such that $\phi$ is an isomorphic mapping.
 			\begin{enumerate}
-				\item[3.17(a)]
-				$<\Z,\cdot>$ onto $<\Z,\ast>$
-				\item[3.17(b)]
-				$<\Z,\ast>$ onto $<\Z,\cdot>$
+				\item[3.17a] $<\Z,\cdot>$ onto $<\Z,*>$
+				As $ \phi $ is a bijection, we need to define $ * $ such that $ \phi $ is a homomorphism. That is $ \phi(mn)=\phi(m)*\phi(n) $ for $ m,n \in\Z $
+				Let $ * $ be defined as $ m*n = mn-n-m+2$ for $ m,n\in\Z $. Using this definition, let $ m,n\in\Z $
+				\[\phi(mn)=mn+1\] and
+				\begin{align*}
+					\phi(m)*\phi(n) &= (m+1)*(n+1)\\
+					&= (mn+m+n+1)-m-1-n-1+2\\
+					&= mn+1
+				\end{align*}
+				Thus, $ \phi(mn)=\phi(m)*\phi(n) $ which makes $ \phi $ homomorphic.\\
+				Therefore, $ \phi $ is an isomorphism.\\
+				\\
+				As 1 is the identity element of $\Z$  under multiplication, and $ \phi $ is an isomorphism, $ \phi(1) $ maps to the identity element of $ \Z $ under $ * $. $ \phi(1) = 1+1=2 $. Therefore, the identity element of $ \Z $ under $ * $ is 2
+				
+				\item[3.17b] $<\Z,*>$ onto $<\Z,\cdot>$
+				As $ \phi $ is a bijection, we need to define $ * $ such that $ \phi $ is a homomorphism. That is $ \phi(m*n)=\phi(m)\cdot\phi(n) $ for $ m,n \in\Z $
+				Let $ * $ be defined as $ m*n = mn+m+n$ for $ m,n\in\Z $. Using this definition, let $ m,n\in\Z $
+				\[\phi(m)\phi(n)=(m+1)(n+1)=mn+m+n+1\] and
+				\begin{align*}
+					\phi(m * n) &= mn+m+n+1
+				\end{align*}
+				Thus, $ \phi(m*n)=\phi(m)\phi(n) $ which makes $ \phi $ homomorphic.\\
+				Therefore, $ \phi $ is an isomorphism.\\
+				\\
+				As 1 is the identity element of $\Z$  under multiplication, and $ \phi $ is an isomorphism, $ \phi $ must map to the identity element of $ \Z $ under $ * $ to 1. Let $i$ be the identity of $<\Z,*>$. $ \phi(i) = 1 = i +1 $. Thus, $i=0$ Therefore, the identity element of $ \Z $ under $ * $ is 0
 			\end{enumerate}
 			
 			\item[3.18] The map $\phi: \Q \rightarrow \Q$ defined by $\phi(x)=3x-1$ for $x \in \Q$ is one to one and onto $\Q$. Give the definition of a binary operation $\ast$ on $\Q$ such that $\phi$ is an isomorphic mapping. Give the identity element.
 			\begin{enumerate}
-				\item[3.18(a)]
+				\item[3.18a]
 				$<\Q,+>$ onto $<\Q,\ast>$
-				\item[3.18(b)]
+				\item[3.18b]
 				$<\Q,\ast>$ onto $<\Q,+>$
 				
 			\end{enumerate}
