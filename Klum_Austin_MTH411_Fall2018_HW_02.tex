@@ -195,7 +195,7 @@
 			\[\phi(a * b) = \phi(a\cdot b) = (ab)^3 = a^3 \cdot b^3 = \phi(a)\cdot\phi(b) \]\\
 			Therefore, $\phi$ is a homomorphism.
 			As $\phi$ is a bijective homomorphism, $\phi$ must be isomorphic.
-			\item[3.8] $<M_2(\R),\cdot>$ with $<\R,\cdot>$ where $\phi(A)$ is the determinate of matrix $A$.\\
+			\item[3.08] $<M_2(\R),\cdot>$ with $<\R,\cdot>$ where $\phi(A)$ is the determinate of matrix $A$.\\
 				Not isomorphic. Let $ A = \begin{bmatrix} 
 												4 & 1 \\
 												2 & 2 
@@ -210,7 +210,7 @@
 											 Thus, $ \phi $ fails to be bijective.\\
 											 Therefore, $ \phi $ fails to be an isomorphism.
 									 
-			\item[3.9] $<M_1(\R),\cdot>$ with $<\R,\cdot>$ where $\phi(A)$ is the determinate of matrix $A$.
+			\item[3.09] $<M_1(\R),\cdot>$ with $<\R,\cdot>$ where $\phi(A)$ is the determinate of matrix $A$.
 				\begin{proof}
 					Let $ A=[a]$ and $B=[b]$ for some $a,b\in\R$.
 					 Assume $ \phi(A) = \phi(B)$. Then, 
@@ -229,30 +229,77 @@
 					 Therefore, as $ \phi $ is bijective and homomorphic, $ \phi $ must be isomorphic.
 				\end{proof}
 			\item[3.10] $<\R,+>$ with $<\R^+,\cdot>$ where $\phi (r) = .5^r$ for $r \in \R$.
-			
+				\begin{proof}
+					Let $q,p\in\R$. Then,
+						\begin{align*}
+							\phi(q)&=\phi(p)\\
+						      0.5^q&=.5^p\\
+								  q&=p
+						\end{align*}
+						Thus, $ \phi $ is injective.\\
+						\\
+						Assume $ q\in\R^+ $. Then, there must exist a $ p\in\R $ such that $ \phi(p)=q $.
+						Let $ p=\log_{0.5}(q) $. Then, $ \phi(p)=q $\\
+						Thus, $ \phi $ is surjective.
+						\\
+						Let $ p,q\in\R$. Then,
+							\[\phi(p\cdot q)=\phi(p+q)=0.5^{p+q}=0.5^p\cdot 0.5^q=\phi(p)\cdot\phi(q)\]
+						Thus, $ \phi $ is homomorphic.\\
+						\\
+						 Therefore, as $ \phi $ is bijective and homomorphic, $ \phi $ must be isomorphic.
+				\end{proof}
 		\end{enumerate}
 		
 		For 3.11 - 3.13 let $F$ be the set of all functions $f$ mapping $\R$ into $\R$ that have derivatives of all orders. Determine if they are isomorphism. Why or why not?
 		
 		\begin{enumerate}
 			
-			\item[3.11] $<F,+>$ with $<F,+>$ where $\phi(f) = f'$, the derivative of $f$.
-			
-			\item[3.12] $<F,+>$ with $<\R,+>$ where $\phi(f) = f'(0)$
-			
+			\item[3.11] $<F,+>$ with $<F,+>$ where $\phi(f) = f'$, the derivative of $f$.\\
+				Let $ f=(x+2) $ and $ g=(x+3) $. Then, $ \phi(f) = 1 $ and $ \phi(g) = 1 $. But $ f \not = g $. \\
+				Thus, $ \phi $ is not injective. \\
+				Thus, $ \phi $ is not bijective. \\
+				Therefore, $ \phi $ is not isomorphic.
+				
+			\item[3.12] $<F,+>$ with $<\R,+>$ where $\phi(f) = f'(0)$\\
+				Let $ f=x^2 $ and $ g=x^3 $. Then, $ \phi(f) = 0 $ and $ \phi(g) = 0 $. But $ f \not = g $. \\
+				Thus, $ \phi $ is not injective. \\
+				Thus, $ \phi $ is not bijective. \\
+				Therefore, $ \phi $ is not isomorphic.
+				
 			\item[3.13] $<F,+>$ with $<F,+>$ where $\phi(f)(x) = \int_0^xf(t)dt $ 
 			
-			\item[3.16] The map $\phi: \Z \rightarrow \Z$ defined by $\phi (n) = n+1$ for $n \in \Z$ is one to one and onto $\Z$. Give the definition of a binary operation $*$ on $\Z$ such that $\phi$ is an isomorphic mapping.
+			\item[3.16] The map $\phi: \Z \rightarrow \Z$ defined by $\phi (n) = n+1$ for $n \in \Z$ is one to one and onto $\Z$. Give the definition of a binary operation $*$ on $\Z$ such that $\phi$ is an isomorphism mapping.
 			\begin{enumerate}
-				\item[3.16(a)]
+				\item[3.16a]
 				$<\Z,+>$ onto $<\Z,\ast>$
-				
-				Define $\ast$ have the operation $m\ast n = m + n - 1$. Let $a,b \in \Z$. Observe. 
-				\[\phi(a+b) = (a+b) + 1 = (a + 1) + (b + 1) - 1 = \phi(a) + \phi(b) - 1 = \phi(a)\ast \phi(b)\]
-				Thus, there exists a homomorphism 
-				\item[3.16(b)]
+				As $ \phi $ is a bijection, we need to define $ * $ such that $ \phi $ is a homomorphism. That is $ \phi(m+n)=\phi(m)*\phi(n) $ for $ m,n \in\Z $
+				Let $ * $ be defined as $ m*n = m+n-1$ for $ m,n\in\Z $. Using this definition, let $ m,n\in\Z $
+					\[\phi(m + n)=m+n+1\] and
+					\begin{align*}
+						\phi(m)*\phi(n) &= (m+1)*(n+1)\\
+										&= (m+1) + (n+1) + 1 - 1\\
+										&= m + n + 1 + 1 -1\\
+										&= m+n+1
+					\end{align*}
+					Thus, $ \phi(m+n)=\phi(m)*\phi(n) $ which makes $ \phi $ homomorphic.\\
+					Therefore, $ \phi $ is an isomorphism.\\
+					\\
+					As 1 is the identity element of $\Z$  under multiplication, and $ \phi $ is an isomorphism, $ \phi(1) $ maps to the identity element of $ \Z $ under $ * $. $ \phi(1) = 1+1=2 $. Therefore, the identity element of $ \Z $ under $ * $ is 2
+				\item[3.16b]
 				$<\Z,\ast>$ onto $<\Z,+>$
-				
+					As $ \phi $ is a bijection, we need to define $ * $ such that $ \phi $ is a homomorphism. That is $ \phi(m+n)=\phi(m)*\phi(n) $ for $ m,n \in\Z $
+					Let $ * $ be defined as $ m*n = m+n+1$ for $ m,n\in\Z $. Using this definition, let $ m,n\in\Z $
+					\[\phi(m)+\phi(n)=(m+1)+(n+1)=m+n+2\] and
+					\begin{align*}
+						\phi(m * n) &= (m*n)+1\\
+						&= (m+n+1)+1\\
+						&= m + n + 1 + 1 -1\\
+						&= m+n+1
+					\end{align*}
+					Thus, $ \phi(m+n)=\phi(m)*\phi(n) $ which makes $ \phi $ homomorphic.\\
+					Therefore, $ \phi $ is an isomorphism.\\
+					\\
+					As 1 is the identity element of $\Z$  under multiplication, and $ \phi $ is an isomorphism, $ \phi(1) $ maps to the identity element of $ \Z $ under $ * $. $ \phi(1) = 1+1=2 $. Therefore, the identity element of $ \Z $ under $ * $ is 2
 			\end{enumerate}
 			
 			\item[3.17] The map $\phi: \Z \rightarrow \Z$ defined by $\phi(n)=n+1$ for $n \in \Z$ is one to one and onto $\Z$. Give the definition of a binary operation $\ast$ on $\Z$ such that $\phi$ is an isomorphic mapping.
