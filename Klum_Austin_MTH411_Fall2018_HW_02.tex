@@ -267,11 +267,12 @@
 				Therefore, $ \phi $ is not isomorphic.
 				
 			\item[3.13] $<F,+>$ with $<F,+>$ where $\phi(f)(x) = \int_0^xf(t)dt $ 
-			
+				Let $ g $ be a constant function defined by $ g(x)=1 \forall x \in \R $ As all derivatives $n\geq 0 $ are defined as $ g^{n}(x)=0 \forall x\in\R $. As $ g $ must be element in F, there must exist a function $ f $ such that $ \phi(f)(x) = g(x) $. Then, $ \phi(f)(x)=\int_{0}^{x} f(t)dt$. Let $ x=0 $. Then, $\phi(f)(0)=\int_{0}^{0} f(t)dt=0$ and $ g(0)=1 $. Thus, $\phi(f)\not = g$. Thus, $ \phi $ is not surjective.\\
+				Therefore, $ \phi $ is not an isomorphism.
 			\item[3.16] The map $\phi: \Z \rightarrow \Z$ defined by $\phi (n) = n+1$ for $n \in \Z$ is one to one and onto $\Z$. Give the definition of a binary operation $*$ on $\Z$ such that $\phi$ is an isomorphism mapping.
 			\begin{enumerate}
 				\item[3.16a]
-				$<\Z,+>$ onto $<\Z,\ast>$
+				$<\Z,+>$ onto $<\Z,*>$
 				As $ \phi $ is a bijection, we need to define $ * $ such that $ \phi $ is a homomorphism. That is $ \phi(m+n)=\phi(m)*\phi(n) $ for $ m,n \in\Z $
 				Let $ * $ be defined as $ m*n = m+n-1$ for $ m,n\in\Z $. Using this definition, let $ m,n\in\Z $
 					\[\phi(m + n)=m+n+1\] and
@@ -286,7 +287,7 @@
 					\\
 					As 1 is the identity element of $\Z$  under multiplication, and $ \phi $ is an isomorphism, $ \phi(1) $ maps to the identity element of $ \Z $ under $ * $. $ \phi(1) = 1+1=2 $. Therefore, the identity element of $ \Z $ under $ * $ is 2
 				\item[3.16b]
-				$<\Z,\ast>$ onto $<\Z,+>$
+				$<\Z,*>$ onto $<\Z,+>$
 					As $ \phi $ is a bijection, we need to define $ * $ such that $ \phi $ is a homomorphism. That is $ \phi(m+n)=\phi(m)*\phi(n) $ for $ m,n \in\Z $
 					Let $ * $ be defined as $ m*n = m+n+1$ for $ m,n\in\Z $. Using this definition, let $ m,n\in\Z $
 					\[\phi(m)+\phi(n)=(m+1)+(n+1)=m+n+2\] and
@@ -302,7 +303,7 @@
 					As 1 is the identity element of $\Z$  under multiplication, and $ \phi $ is an isomorphism, $ \phi $ must map to the identity element of $ \Z $ under $ * $ to 1. Let $i$ be the identity of $<\Z,*>$. $ \phi(i) = 1 = i +1 $. Thus, $i=0$ Therefore, the identity element of $ \Z $ under $ * $ is 0
 			\end{enumerate}
 			
-			\item[3.17] The map $\phi: \Z \rightarrow \Z$ defined by $\phi(n)=n+1$ for $n \in \Z$ is one to one and onto $\Z$. Give the definition of a binary operation $\ast$ on $\Z$ such that $\phi$ is an isomorphic mapping.
+			\item[3.17] The map $\phi: \Z \rightarrow \Z$ defined by $\phi(n)=n+1$ for $n \in \Z$ is one to one and onto $\Z$. Give the definition of a binary operation $*$ on $\Z$ such that $\phi$ is an isomorphic mapping.
 			\begin{enumerate}
 				\item[3.17a] $<\Z,\cdot>$ onto $<\Z,*>$
 				As $ \phi $ is a bijection, we need to define $ * $ such that $ \phi $ is a homomorphism. That is $ \phi(mn)=\phi(m)*\phi(n) $ for $ m,n \in\Z $
@@ -331,29 +332,102 @@
 				As 1 is the identity element of $\Z$  under multiplication, and $ \phi $ is an isomorphism, $ \phi $ must map to the identity element of $ \Z $ under $ * $ to 1. Let $i$ be the identity of $<\Z,*>$. $ \phi(i) = 1 = i +1 $. Thus, $i=0$ Therefore, the identity element of $ \Z $ under $ * $ is 0
 			\end{enumerate}
 			
-			\item[3.18] The map $\phi: \Q \rightarrow \Q$ defined by $\phi(x)=3x-1$ for $x \in \Q$ is one to one and onto $\Q$. Give the definition of a binary operation $\ast$ on $\Q$ such that $\phi$ is an isomorphic mapping. In each case, give the identity element for $*$ on $\Q$.
+			\item[3.18] The map $\phi: \Q \rightarrow \Q$ defined by $\phi(x)=3x-1$ for $x \in \Q$ is one to one and onto $\Q$. Give the definition of a binary operation $*$ on $\Q$ such that $\phi$ is an isomorphic mapping. In each case, give the identity element for $*$ on $\Q$.
 			\begin{enumerate}
-				\item[3.18a]
-				$<\Q,+>$ onto $<\Q,\ast>$
+				\item[3.18a] $<\Q,+>$ onto $<\Q,*>$
+					As $ \phi $ is a bijection, we need to define $ * $ such that $ \phi $ is a homomorphism. That is $ \phi(x+y)=\phi(x)*\phi(y) $ for $ x,y \in\Q $
+					Let $ * $ be defined as $ x*y = x+y+1$ for $ x,y\in\Q $. Using this definition, let $ x,y\in\Q $
+					\[\phi(x+y)=3(x+y)-1=3x+3y-1\] and
+					\[\phi(x)*\phi(y) = (3x-1)+(3y-1)+1=3x+3y-1\]
+					Thus, $ \phi(x+y)=\phi(x)*\phi(y) $ which makes $ \phi $ homomorphic.\\
+					Therefore, $ \phi $ is an isomorphism.\\
+					\\
+					As 0 is the identity element of $\Q$  under addition, and $ \phi $ is an isomorphism, $ \phi(0) $ maps to the identity element of $ \Q $ under $ * $. $ \phi(0) = 3(0)-1=-1 $. Therefore, the identity element of $ \Q $ under $ * $ is -1
+					
 				\item[3.18b]
-				$<\Q,\ast>$ onto $<\Q,+>$
+				$<\Q,*>$ onto $<\Q,+>$
+				As $ \phi $ is a bijection, we need to define $ * $ such that $ \phi $ is a homomorphism. That is $ \phi(x*y)=\phi(x)+\phi(y) $ for $ x,y \in\Q $
+				Let $ * $ be defined as $ x*y = x+y-\frac{1}{3}$ for $ x,y\in\Q $. Using this definition, let $ x,y\in\Q $
+				\[\phi(x)+\phi(y)=(3x-1)+(3y-1)=3x+3y-2\] and
+				\begin{align*}
+				\phi(x * y) &= 3(x*y)-1\\
+				&= 3(x+y-\frac{1}{3})-1 \\
+				&= 3x+3y-1-1 \\
+				&= 3x+3y-2
+				\end{align*}
+				Thus, $ \phi(x*y)=\phi(x)+\phi(y) $ which makes $ \phi $ homomorphic.\\
+				Therefore, $ \phi $ is an isomorphism.\\
+				\\
+				As 0 is the identity element of $\Q$  under addition, and $ \phi $ is an isomorphism, $ \phi $ must map some element, $i$ to the identity element of $ \Q $ under addition.
+				\begin{align*}
+				\phi(i) &= 0 \\
+				3i-1 &= 0 \\
+				i &= \frac{1}{3} 
+				\end{align*}
 				
+				Therefore, the identity element of $ \Q $ under $ * $ is $\frac{1}{3}$
 			\end{enumerate}
 			
 			
 			For 2.21,2.22 correct the definition of the italicized term without  reference to the text, if correction is needed, so that it is in a form acceptable for publication.
 			
-			\item[3.21] A function $\phi:S \rightarrow S'$ is an \textit{isomorphism} if and only if $\phi(a\ast b) = \phi(a) \ast \phi(b)$
+			\item[3.21] A function $\phi:S \rightarrow S'$ is an \textit{isomorphism} if and only if $\phi(a* b) = \phi(a) * \phi(b)$\\
 			
-			\item[3.22] Let $\ast$ be a binary operation on a set $S$. An element $e$ of $S$ with the property $s \ast e = s = e  \ast s$ is an \textit{identity element for} $\ast$ for all $s \in S$.
+			Let $<S,*> $ and $<S',*'>$ be binary algebraic structures. A function $ \phi: S \rightarrow \S' $ is an isomorphism if and only if $ \phi $ is injective, surjective, and satisfies $ \forall a,b\in S, \phi(a*b) = a*'b $
 			
-			\item[3.31] Give a careful proof for a skeptic that the indicated property of a binary structure $<S,\ast>$ is indeed a structural property. (In Theorem 3.14 we did this for the property, "There is an identity element for $\ast$."). For each $c \in S$, the equation $x \ast x = c$ has a solution $x$ in $S$.
+			\item[3.22] Let $*$ be a binary operation on a set $S$. An element $e$ of $S$ with the property $s * e = s = e  * s$ is an \textit{identity element for} $*$ for all $s \in S$.
+			\\
+			Let $*$ be a binary operation on a set S. An element $e$ of S with the property $ x*e = e*x=x $ for all $ x\in S $ is an identity element.
+			\item[3.31] Give a careful proof for a skeptic that the indicated property of a binary structure $<S,*>$ is indeed a structural property. (In Theorem 3.14 we did this for the property, "There is an identity element for $*$."). For each $c \in S$, the equation $x * x = c$ has a solution $x$ in $S$.
+			\begin{proof}
+				Let $ <S,*> $ be a binary structure with the property that $\forall c\in S,x*x=c $ has a solution $x$ in S.\\
+				Suppose $ <S',*'>$ is a binary structure that is isomorphic to $ <s,*> $. Then, there must exist a bijective isomorphic mapping $ \phi : S \rightarrow S' $.\\
+				Let $ c' \in S' $. We need to show that the property holds for $ <S',*'> $. That is $ x'*x'=c' $ has a solution $ x' $ in $ S' $. As $ \phi $ is surjective, there must exist a $ c\in S $ such that $ \phi(c)=c' $. As $ x*x=c $, then $ \phi(x)\in S' $ and $ \phi(x)*'\phi(x) = \phi(x*x)=\phi(c)=c' $\\
+				Thus, $ x' = \phi(x) $ is a solution to $ x'*x'=c' $.\\
+				Therefore, $\forall c\in S,x*x=c $ has a solution $x$ in S is a structural property.
+			\end{proof}
+			\item[3.33] Let $H$ be the subset of $M_2(\R)$ consisting of all matrices of the form $\begin{bmatrix}a & -b \\b & a \end{bmatrix}$ for $a,b \in \R$. Exercise 23 of Section 2 shows that $H$ is closed under both matrix addition and matrix multiplication.
 			
-			\item[3.33] Let $H$ be the subset of $M_2(\R)$ consisting of all matrices of the form for $a,b \in \R$. Exercise 23 of Section 2 shows that $H$ is closed under both matrix addition and multiplication.
-			
+			Let $ \phi : \C \rightarrow H $ be define as $ \phi(a+bi) = \begin{bmatrix}a & -b \\b & a \end{bmatrix} \text {for } a,b\in\R $. $ \phi $ must be bijective by definition.
 			\begin{enumerate}
-				\item[3.33(a)] Show that $<\C,+>$ is isomorphic to $<H,+>$ 
-				\item[3.33(b)] Show that $<\C,\cdot>$ is isomorphic to $<H,\cdot>$
+				\item[3.33a] Show that $<\C,+>$ is isomorphic to $<H,+>$ 
+					\begin{proof}
+						\begin{align*}
+							\phi[(a+bi)+(c+di)] &= \phi[(a+c)+(b+d)i]\\
+												&= \begin{bmatrix}
+												a+c & -(b+d) \\
+												b+d & a+c 
+												\end{bmatrix}\\
+												&=\begin{bmatrix}
+												a & -b \\
+												b & a 
+												\end{bmatrix} + \begin{bmatrix}
+												c & -d \\
+												d & c 
+												\end{bmatrix}\\
+												&= \phi(a+bi)+\phi(c+di) 
+						\end{align*}
+						Therefore, $<\C,+>$ is isomorphic to $<H,+>$
+					\end{proof}
+				\item[3.33b] Show that $<\C,\cdot>$ is isomorphic to $<H,\cdot>$
+				\begin{proof}
+					\begin{align*}
+					\phi[(a+bi)\cdot(c+di)] &= \phi[(ac-bd)+(ad+bc)i]\\
+											&= \begin{bmatrix}
+											ac-bd & -(ad+bd) \\
+											ad+bc & ac-bd 
+											\end{bmatrix} \\
+											&=  \begin{bmatrix}
+											a & -b \\
+											b & a 
+											\end{bmatrix} \cdot \begin{bmatrix}
+											c & -d \\
+											d & c 
+											\end{bmatrix}\\
+											&= \phi(a+bi)\cdot\phi(c+di)
+					\end{align*}
+					Therefore,  $<\C,\cdot>$ is isomorphic to $<H,\cdot>$
+				\end{proof}
 			\end{enumerate}
 		\end{enumerate}
 		
