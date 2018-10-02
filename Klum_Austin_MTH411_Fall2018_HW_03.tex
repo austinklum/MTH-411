@@ -183,12 +183,35 @@ Please include the statements of the problems in your HW submissions. For any Ex
 					\item [Case 1:] $ i = 0 $\\
 					Then, $ j $ is a positive integer with $ a^j =e $
 					\item[Case 2:] $ i \not = 0 $\\
-					Then, $ 0 < i < j $ and thus $ 0<j-i $. AS
+					Then, $ 0 < i < j $ and thus $ 0<j-i $. As, $ a^i = a^j $, we can cancel $ i $ times to get $ e=a^j-i $, where $ j-i $ is a positive integer.
 				\end{enumerate}
+				In all cases, there is a positive integer $ n $ such that $ a^n =e $.\\
+				Therefore, for any $ a\in G \exists n \in \Z^+ \text{ such that } a^n =e $
 			\end{proof}
-			\item[4.35] Show that if $(a  * b)^2 = a^2  * b^2$ for $a$ and $b$ in a group $G$, then $a * b = b  * a$.(text for hints). 
+			\item[4.35] Show that if $(a  * b)^2 = a^2  * b^2$ for $a$ and $b$ in a group $G$, then $a * b = b  * a$.
+			\begin{proof}
+				Let  $(a  * b)^2 = a^2  * b^2$ for $a$ and $b$ in a group $G$. Then, $ (a*b)*(a*b)=a*a*b*b $.
+				Notice.
+				\[b*a*b=a*b*b\]
+				\[b*a=a*b\]
+				Therefore, if $(a  * b)^2 = a^2  * b^2$ for $a$ and $b$ in a group $G$, then $a * b = b  * a$
+			\end{proof} 
 			\item[4.41] Let $G$ be a group and let $g$ be one fixed element of $G$. Show that the map $i_8$, such that $i_8(x) = gxg'$ for $x\in G$, is an isomorphism of $G$ with itself.
-		
+				Assume $ i_g(x) = i_g(y) $ for some $ x,y\in G $. Then, 
+					\[gxg'=gyg'\]
+					\[x=y\]
+				Thus, $i_g $ is injective.\\
+				Let $ y\in G $. Then, $ g'yg $ is an element of $ G $. Notice.
+					\[i_g(g'yg)=gg'ygg'=eye=y\]
+				Thus, $ i_g $ is surjective.\\
+				Let $ x,y\in G $. Observe.
+				\begin{align*}
+					i_g(xy) &= g(xy)g'\\
+							&= g(xg'gy)g'\\
+							&= (gxg')(gyg')
+				\end{align*}
+				Thus, $ i_g $ is homomorphic.\\
+				Therefore, $ i_g $ is an isomorphism.
 		\item[Ex 5.08,5.13] Determine whether the given set of inevitable $n \times  n$ matrices with real number entries is a subgroup of $GL(n,\R)$.
 			\item[5.08] The $ n \times n $ matrices with determinant 2.
 			\item[5.13] The set of all $n \times n$ matrices $A$ such that $(A^T)A=I_n$ (hints in text)
