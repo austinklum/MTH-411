@@ -18,6 +18,7 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\G}{\mathbb{G}}
 \newcommand{\Q}{\mathbb{Q}}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
 
 \begin{document}
 
@@ -64,14 +65,18 @@ Please include the statements of the problems in your HW submissions. For any Ex
 %\item
 %\item
 %\end{enumerate}
-
+ \clearpage
 	\begin{enumerate}
 		
 		\item[Excersise 4.2-4.6]Determine whether the binary operation $*$ gives a group structure on the given set. If no group results, give the first axiom in the order $\mathscr{G}_1,\mathscr{G}_2, \mathscr{G}_3$ from Definition 4.1 that does not hold.
 			\item[4.02] Let $*$ be defined on $2\Z = \{2n|n\in \Z\}$ by letting $a * b = a + b$.
 			
 			Let $a,b,c \in 2\Z$.
-			Consider $a*(b* c)$. \[a* (b * c) = a + (b + c) = (a + b) + c = (a* b)* c\] Therefore $*$ is associative.
+			Consider $a*(b*c)$. 
+			\[a* (b * c) = a * (b*c)= a + (b + c)\]
+			And
+			\[(a*b)*c = (a+b)*c=(a+b)+c=a+(b+c)\] 
+			Thus, $*$ is associative under $ 2\Z $.
 			
 			Consider $0 = 2\cdot 0 \in 2 \Z$. Let $a \in 2\Z$. Then \[ 0 + a = a + 0 = a\] Thus 0 is an identity element.
 			
@@ -80,28 +85,107 @@ Please include the statements of the problems in your HW submissions. For any Ex
 			Therefore, because $*$ is associative, there exists an identity element, and because for all $x \in 2\Z$ there exists an inverse element, $2\Z$ closed under addition is a group.
 			
 			\item[4.04] Let $*$ be defined on $\Q$ by letting $a* b = ab$
-				Let $ a,b,c \in \Q $. Then from associativity of multiplication.
-				\[a*(b*c)=a(bc)=(ab)c=(a*b)*c\]
-				Thus, $ * $ is associative under $ \Q $.
-				Consider 0 in $ \Q $. As for all $ a \in \Q $
-					\[0*a=0a=0\]
-				Thus, there does not exist an identity element for $ \Q $.\\
-				Therefore, $ \Q $ is not a group under multiplication.
+				Let $ a,b,c \in \Q $. Notice.
+				\[a*(b*c)=a*(bc)=abc\]
+				and
+				\[(a*b)*c=(ab)*c=abc\]
+				Thus, $ * $ is associative.
+				Consider 1 in $ \Q $. Let $ a \in \Q $
+					\[1*a=a*1=a\]
+				Thus, 1 is an identity element.\\
+				Consider 0 $ \in\Q $. Then, $ 0 = \frac{0}{1} $. There must exist a $ 0^{-1} $ such that $ 0*0^{-1}=0^{-1}*0=1 $. Then, $ 0^{-1} = \frac{1}{0} $. But this is a contradiction as $ \frac{1}{0} $ is not defined. Thus $ * $ under $ \Q $ does not have an inverse for all elements.\\
+				Therefore, $ \Q $ is not a group under multiplication as it fails axiom $ \mathscr{G_3} $.
 			\item[4.06] Let $*$ be defined on $\C$ by letting $a* b = |ab|$
-			
+				Let $ a,b,c\in\C $. Then,
+				\[(a*b)*c=\abs{ab}*c=\abs{\abs{ab}c}=\abs{a}\abs{b}\abs{c}\]
+				and
+				\[a*(b*c)=a*\abs{bc}=\abs{a\abs{bc}}=\abs{a}\abs{b}\abs{c}\]
+				Thus, $ * $ is associative under $ \C $.\\
+				\\
+				Let $ \abs{e} =1 $ for some $ e\in\C $. Then, 
+				\[a*e=e*a=a\]
+				Thus, $ e $ is an identity element.\\
+				\\
+				Let $ a\in\C $ and $ a'\in\C $ such that $ a' $ is the inverse of a. Then,
+				\[a*a'=\abs{aa'}=\abs{a}\abs{a'}=aa=2a\]
+				Thus, $ \C $ under $ a*b=\abs{ab} $ does not have an inverse.\\
+				Therefore,  $ \C $ under $ a*b=\abs{ab} $ is not a group as it fails axiom $ \mathscr{G_3} $
+				
 			\item[4.10] Let $n$ be a positive integer and let $n\in\Z = \{nm | m\in Z\}$
 			\begin{enumerate}
 				\item Show that $ <n\Z,+> $ is a group.
-				
+				Let $ np, nq \in n\Z $. Then,
+					\[nr+ns=n(r+s)\in n\Z\]
+				Thus, $ n\Z $ is closed under addition.\\
+				\\
+				As addition is associative and $ n\Z \subset \Z, n\Z $ must be associative.\\
+				Let $ e\in n\Z $. Then $ e=nm$. Let $ m=0 $. Then, $ e=n0=0 $.
+					\[0+a=a+0=a, \text{ for some } a\in n\Z\]
+				Thus, 0 is the identity.\\
+				Let $ a,b\in n\Z $ such that $ a=nm $ and $ b=n(-m) $. Then,
+				\[a+b=nm+n(-m)=n(m-m)=n0=0 \]
+				Thus, there exists an inverse for all elements.\\
+				Therefore, $ <n\Z,+> $ is a group.
 				\item Show that $ <n\Z,+> \simeq <\Z,+>$
+				Let $ \phi : n\Z \rightarrow \Z $ be defined by $ \phi(mn)=n $ for $ mn\in n\Z $.
+				Let $ nm,nm'\in \Z $ such that $ \phi(nm)=\phi(nm') $. Then, $ \phi(nm)=m $ and $ \phi(nm') =m' $. As $ m = m' $ must be true we have $ nm=nm' $. \\
+				Thus, $ \phi $ is injective.\\
+				Let $ m\in\Z $. Let $nm\in n\Z  $ such that $ \phi(nm)=m $.
+				Thus, $ \phi $ is surjective.\\
+				Let $ nm,nm'\in n\Z $. Then, $ \phi(nm)=m $ and $ \phi(nm') =m' $. Notice.
+				\[\phi(nm+nm')=\phi(n(m+m'))=m+m'=\phi(nm)+\phi(nm') \]
+				Thus, $ \phi $ is homomorphic.\\
+				Therefore, $ <n\Z,+> \simeq <\Z,+>$
 			\end{enumerate}
-			For 4.12 and 4.18, determine whether the given set of matrices under the specified operation is a group.(additional hints in text)
+			\item[4.12,4.18] Determine whether the given set of matrices under the specified operation is a group.
 			\item[4.12] All $n \times n$ diagonal matrices under matrix multiplication.
+			Let $ H $ be all $ n \times n $ diagonal matrices.  As $ H $ is a subset of all $ n\times n $ matrices and $ n \times n $ matrices are associative. Thus, $ H $ under matrix multiplication must be associative.\\
+			Let the identity matrix be the identity element of $ H $. Then,
+			\[AI_n=I_nA=A \text{ for some } A\in H\]
+			Thus, $ H $ under matrix multiplication has an identity element.\\
+			Let $ Z= \begin{bmatrix}
+			0 & 0 \\
+			0 & 0 
+			\end{bmatrix} $. Then, as $ Z\in H $, there must exist an invertible matrix, $ Z^{-1} $, but $ \det(Z)=0 $. Thus, $ Z $ is not invertible.
+			Therefore, all $n \times n$ diagonal matrices under matrix multiplication is not a group.
 			\item[4.18] All $n \times n$ matrices with determinant either 1 or -1 under matrix multiplication.
+			Let $ H $ be all $ n \times n $ with determinant either 1 or -1 under matrix multiplication.  As $ H $ is a subset of all $ n\times n $ matrices and $ n \times n $ matrices are associative, thus $ H $ under matrix multiplication must be associative.\\
+			Let the identity matrix be the identity element of $ H $. As $ \det(I_n) = 1 \in \Z $, then
+			\[AI_n=I_nA=A \text{ for some } A\in H\]
+			Thus, $ H $ under matrix multiplication has an identity element.\\
+			\\
+			Since, every matrix in $ H $ has a determinant of 1 or -1, the matrices must all be invertible.\\
+			Therefore,  all $n \times n$ matrices with determinant either 1 or -1 under matrix multiplication is a group.
 			\item[4.26] Give a one sentence proof synopsis of the proof of the left cancellation law in Theorem 4.15
+			Given $ a*b=a*c $ for some elements in a set with binary operation $ * $ by associativity and the existence of an inverse of $ a $, we get $ b=c $.
 			\item[4.32] Show that every group $G$ with identity $e$ such that $x * x = e$ for all $x \in G$ is abelian.
+			\begin{proof}
+				Let $ a,b\in G $. Then, $ (a*b)*(a*b)=e $ and $ (a*a)*(b*b)=e $. Thus, $ a*b*a*b =a*a*b*b$. By left and right cancellation, we have $ b*a=a*b $. \\
+				Therefore, $ G $ is abelian.
+			\end{proof}
 			\item[4.33] Let $G$ be an abelian group and let $c^n = c* c * \dotsb * c $ for $n$ factors $c$, where $c\in G$ and $n \in \Z^+$. Give a mathematical induction proof that $(a * b)^n = (a^n) * (b^n)$ for all $a,b \in G$.
-			\item[4.34] Let $G$ be a group with a finite number of elements. Show that for any $a \in G$, there exists an $n\in \Z^+$ such that $a^n = e$. (hints in text).
+			\begin{proof}
+				Let $ n=1 $ and $ a,b\in G $ Then, 
+				 \[(a*b)^n = (a*b)^1 = (a*b)= a^1 * b^1 \]
+				Thus, n holds for 1. Assume $ n $ holds true for some $ k $. That is $ (a*b)^n = (a*b)^k $. We will now show that the expression holds true for $ k+1 $. Observe.
+				\begin{align*}
+					(a*b)^{k+1} &= (a*b)*(a*b)^k\\
+								&= (a*b)*(a^k*b^k)\\
+								&= a*a^k*b*b^k\\
+								&= a^{k+1}*b^{k+1}
+				\end{align*}
+				Therefore, by mathematical induction $(a * b)^n = (a^n) * (b^n)$ for all $a,b \in G$.
+			\end{proof}
+			\item[4.34] Let $G$ be a group with a finite number of elements. Show that for any $a \in G$, there exists an $n\in \Z^+$ such that $a^n = e$.
+			\begin{proof}
+				Let $ m $ be the number of elements in $ G $. Consider $ e,a,a^2,\cdots, a^m $. As $ G $ is closed,  $ e,a,a^2,\cdots, a^m $ are in $ G $. As $ G $ has only $ m $ elements, we must have $ a^i=a^j $ for some $ i,j\in\{0,1,2,\cdots,m\}  $ with $ 0\leq i < j \leq m $.
+				\begin{enumerate}
+					\item [Case 1:] $ i = 0 $\\
+					Then, $ j $ is a positive integer with $ a^j =e $
+					\item[Case 2:] $ i \not = 0 $\\
+					Then, $ 0 < i < j $ and thus $ 0<j-i $. AS
+				\end{enumerate}
+			\end{proof}
 			\item[4.35] Show that if $(a  * b)^2 = a^2  * b^2$ for $a$ and $b$ in a group $G$, then $a * b = b  * a$.(text for hints). 
 			\item[4.41] Let $G$ be a group and let $g$ be one fixed element of $G$. Show that the map $i_8$, such that $i_8(x) = gxg'$ for $x\in G$, is an isomorphism of $G$ with itself.
 		
