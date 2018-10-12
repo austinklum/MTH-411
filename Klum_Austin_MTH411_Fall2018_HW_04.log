@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.4.24)  2 OCT 2018 21:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.4.24)  12 OCT 2018 01:50
 entering extended mode
-**./Klum_Austin_MTH411_Fall2018_HW_03.tex
-(Klum_Austin_MTH411_Fall2018_HW_03.tex
+**./Klum_Austin_MTH411_Fall2018_HW_04.tex
+(Klum_Austin_MTH411_Fall2018_HW_04.tex
 LaTeX2e <2017-04-15>
 Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
 (D:\Programs\MiKTeX2.9.6520\tex\latex\base\article.cls
@@ -590,23 +590,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip62
 )
-(Klum_Austin_MTH411_Fall2018_HW_03.aux)
-\openout1 = `Klum_Austin_MTH411_Fall2018_HW_03.aux'.
+(Klum_Austin_MTH411_Fall2018_HW_04.aux)
+\openout1 = `Klum_Austin_MTH411_Fall2018_HW_04.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -644,7 +644,7 @@ LaTeX Font Info:    ... okay on input line 23.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 23.
+(lastpage)             ! on input line 33.
 ABD: EveryShipout initializing macros
 (D:\Programs\MiKTeX2.9.6520\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -673,7 +673,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring OFF on input line 23.
+Package hyperref Info: Link coloring OFF on input line 33.
 
 (D:\Programs\MiKTeX2.9.6520\tex\latex\hyperref\nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -683,39 +683,34 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count141
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
 
-(Klum_Austin_MTH411_Fall2018_HW_03.out) (Klum_Austin_MTH411_Fall2018_HW_03.out)
+(Klum_Austin_MTH411_Fall2018_HW_04.out) (Klum_Austin_MTH411_Fall2018_HW_04.out)
 \@outlinefile=\write4
-\openout4 = `Klum_Austin_MTH411_Fall2018_HW_03.out'.
+\openout4 = `Klum_Austin_MTH411_Fall2018_HW_04.out'.
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 29.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 39.
 (D:\Programs\MiKTeX2.9.6520\tex\latex\base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 39.
 
 (D:\Programs\MiKTeX2.9.6520\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 39.
 
 (D:\Programs\MiKTeX2.9.6520\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 29.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 39.
 
 (D:\Programs\MiKTeX2.9.6520\tex\latex\jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
@@ -728,22 +723,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{C:/Users/Austin Klum/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 72.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 79.
 
 (D:\Programs\MiKTeX2.9.6520\tex\latex\doublestroke\udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
-Missing character: There is no 3 in font rsfs10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--106
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--110
-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -753,9 +737,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [2
 
 ]
-Missing character: There is no 3 in font rsfs10!
+Underfull \hbox (badness 10000) in paragraph at lines 159--164
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--123
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--164
 
  []
 
@@ -766,71 +753,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 154--159
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[4]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[5]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 343--380
-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[7]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 484--490
-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 494--497
-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[10] 
 AED: lastpage setting LastPage
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -838,44 +765,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 547.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 547.
- (Klum_Austin_MTH411_Fall2018_HW_03.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 547.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 547.
-Package rerunfilecheck Info: File `Klum_Austin_MTH411_Fall2018_HW_03.out' has n
+[4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
+ (Klum_Austin_MTH411_Fall2018_HW_04.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
+Package rerunfilecheck Info: File `Klum_Austin_MTH411_Fall2018_HW_04.out' has n
 ot changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 547.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 187.
  ) 
 Here is how much of TeX's memory you used:
- 16991 strings out of 493312
- 314577 string characters out of 3139339
- 395566 words of memory out of 3000000
- 20201 multiletter control sequences out of 15000+200000
- 12858 words of font info for 58 fonts, out of 3000000 for 9000
+ 17047 strings out of 493312
+ 315908 string characters out of 3139339
+ 386560 words of memory out of 3000000
+ 20271 multiletter control sequences out of 15000+200000
+ 11047 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,14n,54p,488b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,11n,54p,443b,539s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Austin Klum\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\double
 stroke\dpi600\dsrom12.pk><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmex
-10.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D
-:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program
-s/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Programs/MiKTeX2.
-9.6520/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programs/MiKTeX2.9.6520/fon
-ts/type1/public/amsfonts/cm/cmr12.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmss
-12.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D
-:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Programs
-/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Programs/MiKTeX2.
-9.6520/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/Programs/MiKTeX2.9.65
-20/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on Klum_Austin_MTH411_Fall2018_HW_03.pdf (11 pages, 192732 bytes
-).
+s/cm/cmbx12.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmmi
+12.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:
+/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Programs/
+MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programs/MiKTeX2.9.6
+520/fonts/type1/public/amsfonts/cm/cmss12.pfb><D:/Programs/MiKTeX2.9.6520/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsf
+onts/symbols/msbm10.pfb>
+Output written on Klum_Austin_MTH411_Fall2018_HW_04.pdf (4 pages, 108682 bytes)
+.
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
+ 74 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

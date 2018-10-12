@@ -502,17 +502,45 @@ Please include the statements of the problems in your HW submissions. For any Ex
 		\item[5.45] Show that a nonempty subset $H$ of a group $G$ is a subgroup of $G$ if and only if $ab^{-1}\in H$ for all $a,b \in H$.
 			\begin{proof}
 				Suppose that $ H $ is a subgroup of $ G $. Then for $ a,b\in H $, we have $ b^{-1}\in H $ and $ ab^{-1}\in H $ since $ H $ must be closed under the induced operation.\\
-				Let $ ab^-1\in H $ for some $ a,b\in H $
+				Let $ ab^-1\in H $ for some $ a,b\in H $. As $ H $ is nonempty, there must exist an $ a\in H $ such that $ b=a $. Then, $ aa^{-1}=e $ which is in $ H $. Since $ e\in H $, we see $ ea^{-1}=a^{-1}e=a^{-1} $ Thus, there is an identity element.\\
+				Let $ a,b\in H $. Then $ b^{-1}\in H $. Then, $ a(b^{-1})^{-1}=ab $ which is in $ H $. Thus, there is an inverse.\\
+				Therefore, $ H $ is a subgroup of $ G $.
+				
 			\end{proof}
 		\item[5.52] Generalizing Exercise 51, let $S$ be any subset of a group $G$.
 		
 		\begin{enumerate}
-			\item Show that $H_s = \{x \in G|xs = sx \text{ for all} s \in S\}$ is a subgroup of $G$. 
+			\item Show that $H_s = \{x \in G|xs = sx \text{ for all} s \in S\}$ is a subgroup of $G$. Assuming $ S $ is nonempty. Let $ x,y\in H_s $. Then for some $ s\in S , xs =sx$ and $ ys=sy $. Notice. 
+			\[(xy)s=x(ys)=x(sy)=(xs)y=(sx)y=s(xy)\]
+			Thus, $ xy\in H_s $ and $ H_s $ is closed under the operation.\\
+			As $ H \subseteq G$ and $ G $ has an identity element, $e $. Then, for all $s\in S, es=se=s $. We see that $ e\in H_s $\\
+			Let $ x\in H_s $ and $ s\in S $. Then, $ xs=sx $ and $ x^{-1}(xs)x^{-1}=x^{-1}(sx)x^{-1} $. Observe.
+			\[x^{-1}(xs)x^{-1}=x^{-1}x(sx^{-1})=e(sx^{-1})=sx^{-1}\]
+			and
+			\[x^{-1}(sx)x^{-1}=(x^{-1}s)(xx^{-1})=(x^{-1}se)=x^{-1}s\]
+			Thus, $ x^{-1}s=sx^{-1} $.\\
+			Thus, $ x^{-1}\in H_s $.\\
+			Therefore, $ H_s $ is a subgroup.
 			\item In reference to part $(a)$, the subgroup $H_G$ is the \textbf{center of} $G$. Show that $H_G$ is an abelian group.
+			\begin{proof}
+				Let $ a,b\in H_G $. Then, $ ax=xa $ and $ bx=xb $ for all $ x \in G $. Then for $ a*b $ notice.
+				\[ba=(ba)x=x(ba)=x(ab)=ab\]
+				Thus, $ H_G $ is abelian.
+			\end{proof}
 		\end{enumerate}
 		
 		\item[5.54] Show that if $H \leq G$ and $K \leq G$, then $H\cap K \leq G$.
+		Let $ a,b \in H\cap K. $ Then $ a,b\in H $ and $ a,b \in K $. Because $ H $ and $ K $ are subgroups, we have $ ab\in H $ and $ ab\in H\cap K $. Thus, $ H\cap K $ is closed under the operation of $ G $. \\
+		 As $ H\leq G $ and $ K \leq G $, then $ e\in H $ and $ e\in K $. Thus, $ e\in H \cap K $\\
+		Let $ x,y \in H \cap K $. Then, $ x\in H $ and $ x\in K $. As $ H \leq G $ and $ K \leq G $, we have an inverse for $ x $, namely $ x^{-1} $. Then, $ x^{-1}\in H $ and $ x^{-1}\in K $. Thus, $ x^{-1}\in H \cap K $.\\
+		Therefore, $ H \cap K \leq G$
 		\item[5.55] Prove that every cyclic group is abelian.
+			\begin{proof}
+				Let $ G $ be a cyclic group and let $ a $ be a generator of $ G $ such that $ G = \langle a \rangle = \{a^n|n\in\Z\} $. \\
+				Let $ x,y \in G $, there exist $ r $ and $ s $ such that $ x=a^r $ and $ y=a^s $. Then,
+				\[xy=a^ra^s=a^{r+s}=a^{s+r}=a^sa^r=xy\]
+				Therefore, $ G $ is abelian.
+			\end{proof}
 		
 	\end{enumerate}
 
