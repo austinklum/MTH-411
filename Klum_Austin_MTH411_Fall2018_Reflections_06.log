@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.4.24)  20 OCT 2018 16:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.4.24)  14 OCT 2018 22:19
 entering extended mode
-**./Klum_Austin_MTH411_Fall2018_Reflections_04.tex
-(Klum_Austin_MTH411_Fall2018_Reflections_04.tex
+**./Klum_Austin_MTH411_Fall2018_Reflections_06.tex
+(Klum_Austin_MTH411_Fall2018_Reflections_06.tex
 LaTeX2e <2017-04-15>
 Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
 (D:\Programs\MiKTeX2.9.6520\tex\latex\base\article.cls
@@ -546,8 +546,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \c@exercise=\count131
 
-(Klum_Austin_MTH411_Fall2018_Reflections_04.aux)
-\openout1 = `Klum_Austin_MTH411_Fall2018_Reflections_04.aux'.
+(Klum_Austin_MTH411_Fall2018_Reflections_06.aux)
+\openout1 = `Klum_Austin_MTH411_Fall2018_Reflections_06.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
@@ -643,10 +643,10 @@ LaTeX Info: Redefining \ref on input line 36.
 LaTeX Info: Redefining \pageref on input line 36.
 LaTeX Info: Redefining \nameref on input line 36.
 
-(Klum_Austin_MTH411_Fall2018_Reflections_04.out)
-(Klum_Austin_MTH411_Fall2018_Reflections_04.out)
+(Klum_Austin_MTH411_Fall2018_Reflections_06.out)
+(Klum_Austin_MTH411_Fall2018_Reflections_06.out)
 \@outlinefile=\write4
-\openout4 = `Klum_Austin_MTH411_Fall2018_Reflections_04.out'.
+\openout4 = `Klum_Austin_MTH411_Fall2018_Reflections_06.out'.
 
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
 
@@ -675,7 +675,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 64.
 (D:\Programs\MiKTeX2.9.6520\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 67--73
+Underfull \hbox (badness 10000) in paragraph at lines 66--72
 
  []
 
@@ -684,36 +684,38 @@ AED: lastpage setting LastPage
 [2
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
- (Klum_Austin_MTH411_Fall2018_Reflections_04.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
-Package rerunfilecheck Info: File `Klum_Austin_MTH411_Fall2018_Reflections_04.o
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
+ (Klum_Austin_MTH411_Fall2018_Reflections_06.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
+Package rerunfilecheck Info: File `Klum_Austin_MTH411_Fall2018_Reflections_06.o
 ut' has not changed.
 (rerunfilecheck)             Checksum: 27DFDB8EB815B83F596581BA924866C7;232.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
  ) 
 Here is how much of TeX's memory you used:
- 16186 strings out of 493312
- 301877 string characters out of 3139339
- 370685 words of memory out of 3000000
- 19450 multiletter control sequences out of 15000+200000
- 9506 words of font info for 36 fonts, out of 3000000 for 9000
+ 16188 strings out of 493312
+ 301901 string characters out of 3139339
+ 372693 words of memory out of 3000000
+ 19451 multiletter control sequences out of 15000+200000
+ 9852 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,54p,1086b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,11n,54p,2123b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Pro
 grams/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Programs/MiK
 TeX2.9.6520/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programs/MiKTeX2.9.65
 20/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Programs/MiKTeX2.9.6520/fonts/t
 ype1/public/amsfonts/cm/cmr10.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/publi
-c/amsfonts/cm/cmss10.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb>
-Output written on Klum_Austin_MTH411_Fall2018_Reflections_04.pdf (2 pages, 8990
-0 bytes).
+c/amsfonts/cm/cmr8.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/
+cm/cmss10.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/P
+rograms/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Programs/M
+iKTeX2.9.6520/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Klum_Austin_MTH411_Fall2018_Reflections_06.pdf (2 pages, 1202
+65 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
+ 82 PDF objects out of 1000 (max. 8388607)
  7 named destinations out of 1000 (max. 500000)
  45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

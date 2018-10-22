@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.4.24)  12 OCT 2018 01:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.4.24)  20 OCT 2018 16:15
 entering extended mode
 **./Klum_Austin_MTH411_Fall2018_HW_04.tex
 (Klum_Austin_MTH411_Fall2018_HW_04.tex
@@ -766,20 +766,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 184.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 184.
  (Klum_Austin_MTH411_Fall2018_HW_04.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 184.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 184.
 Package rerunfilecheck Info: File `Klum_Austin_MTH411_Fall2018_HW_04.out' has n
 ot changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 187.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 184.
  ) 
 Here is how much of TeX's memory you used:
- 17047 strings out of 493312
- 315908 string characters out of 3139339
- 386560 words of memory out of 3000000
+ 17045 strings out of 493312
+ 315896 string characters out of 3139339
+ 386561 words of memory out of 3000000
  20271 multiletter control sequences out of 15000+200000
  11047 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -794,10 +794,10 @@ MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programs/MiKTeX2.9.6
 /type1/public/amsfonts/cm/cmsy10.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/pu
 blic/amsfonts/cm/cmti12.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb>
-Output written on Klum_Austin_MTH411_Fall2018_HW_04.pdf (4 pages, 108682 bytes)
+Output written on Klum_Austin_MTH411_Fall2018_HW_04.pdf (4 pages, 108670 bytes)
 .
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
+ 72 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

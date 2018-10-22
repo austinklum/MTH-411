@@ -1,0 +1,74 @@
+%This is a Latex file.
+\documentclass[11pt]{article}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{dsfont}
+\usepackage{fancyhdr}
+\usepackage[margin=1in]{geometry}
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{tikz}
+\usepackage{url,hyperref}
+
+\theoremstyle{plain}
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\pagestyle{fancy} 
+\lhead{\sf Austin Klum} \chead{\sf Reflection\#05} \rhead{\sf Fall 2018 MTH 411} 
+\lfoot{} \cfoot{\thepage} \rfoot{}
+
+%% See Page 3 of Fraleigh
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\Rplus}{\mathbb{R^+}}
+\newcommand{\Qplus}{\mathbb{Q^+}}
+\newcommand{\Zplus}{\mathbb{Z^+}}
+
+\newcommand{\Cstar}{\mathbb{C^*}}
+\newcommand{\Rstar}{\mathbb{R^*}}
+\newcommand{\Qstar}{\mathbb{Q^*}}
+\newcommand{\Zstar}{\mathbb{Z^*}}
+
+
+
+\begin{document}
+
+Your weekly reflections are due every Sunday 11:59pm in the appropriate D2L Dropbox. They should consist of two sections (each of which can be further divided into subsections) as described in detail at the start of lecture 2.
+
+\section{Reflection/\href{https://en.wikipedia.org/wiki/Logbook}{Logbook}/Diary}
+
+\begin{itemize}
+\item What did you find neat/cool/beautiful/incredible/\dots?
+\item Generate questions/conjectures based on your reading of the text, my notes, and other sources (online, library, faculty, peers).
+\item Try and answer some of them! 
+\item Strive to discover connections with the math from your past.\\
+Here are some sample sentence starters: ``This reminds me of \dots from class \dots \dots because \dots'' and ``I used to think \dots but now I think \dots because \dots''.
+
+\end{itemize}
+
+\section{Letter to Dr. Fraleigh}
+
+\begin{itemize}
+\item Comments based on your reading of Fraleigh. 
+\item What did you find neat/cool/beautiful/incredible/\dots?
+\item Comments on clarity or lack thereof.
+\item Suggestions for improvement. This can be retroactive, based on future understanding and ``AHA'' moments!
+\item Did you find any typos? Were there any words or symbols used that did not make sense? Did you figure out what those words meant (either by looking through the index, or pursuing an external resource).
+\end{itemize}
+
+\clearpage
+
+\section{Reflection/Logbook/Diary}
+	I found this chapter hard to get a grasp of. I fail to see how the smallest subgroup that contains both some $ a,b \in G $ is in fact the finite products of $ a $ and $ b $ with powers $ m,n \in \Z $. The example provided does not provide me with more insight, in fact confusing me more. How does the expression $ a^2b^4a^{-3}b^2a^5 $ ever produce the smallest subgroup? Also, why would the group not be abelian? We have proved that all cyclic group are abelian and we had supposed $ G $ was cyclic, so the subgroup is cyclic, thus the subgroup is abelian. While moving on to intersections Fraleigh claims how intuitively this idea translates to intersections. I fail to see how this translates, but I do agree that the smallest subgroup that contains to elements would be the intersection of the two elements. The notation on these intersections seems a little strange to me. In the proof while showing closure we take the step of getting two elements from the intersection of subgroups $ H_i $. This is a little confusing as I would've shown getting the two elements from $ h_i $ and stating that they are in the intersection. Another new piece of information that can lead to ambiguity is saying that $ a $ is a generator of $ G $ meaning $ \langle a \rangle = G $ or $ a $ is a member of a subset of $ G 1$ that generates $ G $. This is supposedly obvious depending on the context, but I doubt it's as simple as Fraleigh claims. I found Cayley Digraphs to be easier to understand. These graphs are very similar to the graphs that we discussed in my Software Design III class. One interesting thought I had was the different use of terminology for essentially the same idea. The term \textbf{arcs} were simply called \textbf{edges}. I haven't taken Graph Theory, but I thought that all graphs like these used the term edge. I find it odd that Cayley Digraphs have a different term. I think the Cayley Digraphs are especially helpful when trying to visualize the connection of different subgroups.
+\section{Letter to Fraleigh}
+Dear Dr. Fraleigh,\\
+\\
+I found your opening paragraph in Section 7 to be confusing and unclear. I cannot see how the smallest subgroup that contains both some $ a,b \in G $ is the operation given by $ G $ applied to varying powers of $ a $ and $ b $. I would have liked a greater explanation on way this statement should be true. I can agree that the two will generate a new subgroup of $ G $, but I have a hard time believing that it will be the \textit{smallest} subgroup. I found the multiple meanings of \textit{a generator of } to be confusing as it is not always clear what context we're in and what the real meaning is at that moment. Theorem 7.6 has no meaning to me. I cannot even grasp what it is trying to define in the slightest. The proof does not help me much either. In addition I would highly discourage the use of splitting of proof onto the next page. This causes the reader to lose their train of thought and makes it even more difficult to understand. I found the Cayley Digraphs mostly make sense to me. I do find it interesting that other common graph terms are not used in Cayley Digraph's. I also find it strange to provide arrows as all operations in the group must have an inverse so all arcs of the graph should go both ways. Even more confusing is that most times there are arrows, but on certain Cayley Digraph's there are some arcs that are claimed to be doubly linked.
+\\
+Sincerely,\\
+Austin Klum
+
+
+\end{document}
