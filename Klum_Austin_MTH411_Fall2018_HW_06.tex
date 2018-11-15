@@ -1,0 +1,169 @@
+%This is a Latex file.
+\documentclass[12pt]{article}
+\usepackage{
+	latexsym,
+	fancyhdr,
+	amsmath,
+	amsfonts,
+	dsfont,
+	amsthm,
+	amssymb,
+	mathrsfs,
+	mathtools
+}
+\usepackage[margin=0.94in]{geometry}
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{url, hyperref}
+\usepackage{float}
+
+\parindent 0pt
+
+\pagestyle{fancy} \lhead{\sf MTH 411} \chead{\sf Homework \#06}
+\rhead{\sf Due: Friday 11/16/2018} \lfoot{} \cfoot{} \rfoot{}
+
+\newcommand{\N}{\mathds{N}}
+\newcommand{\Z}{\mathds{Z}}
+\renewcommand{\vec}[1]{\overrightarrow{#1}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\G}{\mathbb{G}}
+\newcommand{\Q}{\mathbb{Q}}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+
+\begin{document}
+\begin{enumerate}
+	\item[9.02] Find all orbits of $ \begin{pmatrix}
+	1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+	5 & 6 & 2 & 4 & 8 & 3 & 1 & 7 
+	\end{pmatrix}  $ \\
+	{1, 5, 7, 8}, {2, 3, 6}, {4} 
+	
+	\item[9.04] Find all orbits of $ \sigma : \Z \rightarrow \Z $ where $ \sigma(n) = n +1 $ \\
+	One orbit, being $ \Z $
+	\item[9.06] Find all orbits of $ \sigma : \Z \rightarrow \Z $ where $ \sigma(n) = n - 3 $
+	\[\{3n|n\in\Z\},\{3n+1|n\in\Z\},\{3n+2|n\in\Z\}\]
+	\item[9.08] Compute the indicated product of cycles $ (1,3,2,7)(4,8,6) $ that are permutations of $ \{1,2,3,4,5,6,7,8\} $ 
+	\[\begin{pmatrix}
+	1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+	3 & 7 & 2 & 8 & 5 & 4 & 1 & 6 
+	\end{pmatrix}  \]
+	\item[9.12] Express the permutation of $ \{1,2,3,4,5,6,7,8\} $  as a product of disjoint cycles, and then as a product of transpositions.  $ \begin{pmatrix}
+	1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+	3 & 1 & 4 & 7 & 2 & 5 & 8 & 6 
+	\end{pmatrix}  $\\
+	$(1,3,4,7,8,6,5,2)$ and $ (1,2)(1,5)(1,6)(1,8)(1,7)(1,4)(1,3) $
+	
+	\item[9.19] Complete figure 9.22 of the Cayley digraph for the alternating group $ A_4 $ using the generating set $ S = \{(1,2,3),(1,2)(3,4)\} $
+	
+	\item[9.20-22] Correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
+	
+	\item[9.20] For a permutation $ \sigma $ of a set $ A $, an \textit{orbit} of $ \sigma $ is a nonempty subset of $ A $ that is mapped onto itself by $ \sigma $\\
+	Correct as stated.
+	\item[9.21] A \textit{cycle} is a permutation having only one orbit.\\
+	A \textit{cycle} is a permutation having at most one orbit containing more than one element.
+	\item[9.22] The \textit{alternating group} is the group of even permutations.\\
+	The \textit{alternating group} $ A_n $ is the subgroup of $ S_n  $ consisting of the even permutations in $ S_n $.
+	\item[9.24] Which of the permutations in $ S_3 $ of Example 8.7 are even permutations? Give the table for the alternating group of $ A_3 $.
+	The permutations that even are $ \rho_0=(12)(12),\rho_1=(1,2,3)=(1,3)(1,2), $ and $ \rho_2 = (1,3,2)=(1,2)(1,3) $
+	\item[]
+	\begin{table}[H]
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+			& \textbf{$\rho_0$} & \textbf{$\rho_1$} & \textbf{$\rho_2$} \\ \hline
+			\textbf{$\rho_0$} &$ \rho_0$ & $\rho_1$ & $\rho_2 $\\ \hline
+			\textbf{$\rho_1$} &$ \rho_1$ & $\rho_2$ & $\rho_0 $\\ \hline
+			\textbf{$\rho_2$} & $\rho_2 $& $\rho_0$ & $\rho_1 $\\ \hline
+		\end{tabular}
+	\end{table}
+	\item[9.33] Consider $ S_n $ for a fixed $ n\geq2 $ and let $ \sigma $ be a fixed odd permutation. Show that every odd permutation in $ S_n $ is a product of $ \sigma $ and some permutation in $ A_n $.\\
+	 Consider $ S_n $ for a fixed $ n \geq 2 $, and let $ \sigma $ be a fixed odd permutation in $ S_n $. Let $ \sigma' $ be a odd permutation in $ S_n $. Then, $ \sigma^{-1} $ is also an odd permutation. Let $ \mu = \sigma^{-1}\sigma'$ which must be an even permutation as its the product of two odd permutations. Then, 
+	 	\[\sigma' = \sigma(\sigma^{-1}\sigma') \]
+	 We see that $ \sigma' $ is in fact a product of $ \sigma $ and a permutation in $ A_n $\\
+	 Therefore, every odd permutation in $ S_n $ is a product of $ \sigma $ and some permutation in $ A_n $
+	 
+	 \item[10.12] Find the index of $ \langle 3 \rangle $ in the group $ Z_{24} $ \\
+	 $ \langle 3 \rangle = \{1,3,6,9,12,15,18,21\}$. Thus, index is $ 24/8 = 3$
+	 
+	 \item[10.16] Let $ \mu = (1,2,4,5)(3,6) $ in $ S_6 $. Find the index of $ \langle \mu \rangle $ in $ S_6 $.\\
+	 Notice that $ \mu $ generates a cyclic subgroup $ S_6 $ of order 4. Thus we have for the index $ 6!/4 = 720/4 = 180$.
+	 
+	 \item[10.17] Let $ G $ be a group and let $ H\subseteq G $. The \textit{left coset of H containing a} is $ aH = \{ah|h\in H\} $ \\
+	  Let $ G $ be a group and let $ H \leq G $. The \textit{left coset of H containing a} is $ aH = \{ah|h\in H\} $
+	 \item[10.18] Let $ G $ be a group and let $ H\leq G $. The \textit{index of H in G } is the number of right cosets of $ H $ in $ G $ \\
+	 Correct as stated.
+	 \item[10.20] A subgroup of an abelian group $ G $ whose left cosets and right cosets give different partitions of $ G $.
+	 	Impossible, as an abelian group cannot have a subgroup whose left and right cosets give different partitions.
+	 \item[10.21] A subgroup of a group $ G $ whose left cosets give a partition of $ G $ into just one cell. \\
+	 Let $ G $ be a group, then use the improper subgroup $ H = G $. Then the left cosets give a partition of $ G $ into just one cell.
+	 	
+	 \item[10.22] A subgroup of a group of order 6 whose left cosets give a partition of the group into 6 cells.\\
+	 Consider the subgroup $ H := {0} $ of $ \Z_6 $. Then $ 0 + H = \{0\}, 1+H=\{1\},\cdots5+H=\{5\} $
+	 \item[10.23] A subgroup of a group of order 6 whose left cosets give a partition of the group into 12 cells.\\
+	 Impossible as the order cannot be less than the number of cells when the left cosets partition a subgroup.
+	 \item[10.24] A subgroup of a group of order 6 whose left cosets give a partition of the group into 4 cells.
+	 Impossible as 4 does not divide 6. Thus, a group of order 6 cannot be partitioned into 4 cells.
+	 \item[10.28] Let $ H $ be a subgroup of a group $ G $ such that $ g^{-1}hg \in H $ for all $ g\in G $ and all $ h \in H $. Show that every left cosets $ gH $ is the same as the right coset $ Hg $.\\
+	  Let $ H $ be a subgroup of a group $ G $ such that $ g^{-1}hg \in H $ for all $ g\in G $ and all $ h \in H $. \\
+	  \\
+	  Let $ g\in G $ and $ x\in gH $. Then $ \exists h\in H  $ such that $ x=gh $. Notice. 
+	  \[gh=ghe=ghg^{-1}g=(ghg^{-1}g)=[(g^{-1})^{-1}hg^{-1}]\] 
+	 We then have, $ ghg^{-1}\in H $\\
+	 Thus, $ x\in Hg $\\
+	 Therefore, $ gH \subset Hg $\\
+	 \\
+	 Let $ x \in Hg $ and $ h \in H $ such that $ x = hg $. Notice.
+	 \[hg=ehg=gg^{-1}hg^=g(g^{-1}hg)\]
+	 Thus, $ g^{-1}hg\in H $ and $ x\in gH $\\
+	 Therefore, $ Hg \subset gH $ for all $ g \in G $
+	 
+	 Therefore, as the two are subsets of one another,every left cosets $ gH $ is the same as the right coset $ Hg $, $gH= hg$\\
+	 \item[10.29] Let $ H $ be a subgroup of a group $ G $. Prove that if the partition of $ G $ into left cosets of $ H $ is the same as the partition into right cosets of $ H $, then $ g^{-1}hg\in H $ for all $ g\in G $ and all $ h\in H $\\
+	 
+	 Let $ g\in G $ and $ h \in H $ such that $ hg \in Hg $. Since $ H \leq G $, $ e \in H $. Notice. $ g = eg\in Hg $ and $ g = ge\in gH $. Thus, $ g \in gH \cap Hg $. Then as the left and right cosets are the same partition, we have $ gH = Hg $. From this there exists $ h'\in H $ such that $ hg = gh' \Rightarrow g^{-1}hg=g^{-1}gh'=eh'=h'\in H$.\\
+	 Therefore, we have $ g^{-1}hg\in H $ for all $ g\in G $ and all $ h\in H $
+	 
+	 \item[10.37] Show that a group with at least two elements but with no proper nontrivial subgroups must be finite and of prime order. \\
+	 Let $ G $ be a group with order $ \geq 2 $ and with no proper nontrivial subgroups. Let $ a \in G $ and $ a \not = e $. Then $ \langle a \rangle $ is a nontrivial subgroup of $ G $. Thus, $ \langle a \rangle $ must be $ G $. As we've seen every cyclic group of not of prime order has proper subgroups, we must have that $ G $ is finite of prime order.
+	 
+	 \item[10.40] Show that if a group $ G $ with identity $ e $ has finite order $ n $, then $ a^n =e $ for all $ a\in G $
+	 Let $ G $ be a group with identity $ e $ with finite order $ n $. Let $ a \in G $. Let $ \langle a \rangle $ have order $ d $ and must divide the order of $ G $. i.e. $ n=dq $ for some $ q\in \Z $. Then $ a^d = e $. Thus by the theorem of Lagrange, $ a^n = (a^d)^q=e^q=e $
+	 
+	 \item[11.01] List the elements of $ \Z_2 \times \Z_4 $. Find the order of each of the elements. Is the group cyclic?
+	 	$ \{(0,0),(0,1),(0,2),(0,3),(1,0),(1,1),(1,2),(1,3)\} $\\
+	 	Orders are $ 1,4,2,4,2,4,2,4 $, respectively.\\
+	 	Not cyclic.
+	 \item[11.02] Repeat for the group $ \Z_3 \times \Z_4  $
+	   $ \{ (0,0),(0,1),(0,2),(0,3),(1,0),(1,1),(1,2),(1,3),(2,0),(2,1),(2,2),(2,3)\}$\\
+	   Order are $ 1,4,2,4,2,12,6,12,3,12,6,12 $, respectively\\
+	   Cyclic as there are elements of order 12.
+	 \item[11.14] Fill in the blanks.
+	 	\begin{enumerate}
+			\item The Cyclic subgroup of $ Z_{24} $ generated by $ 18 $ has order \_\_\_.\\
+			4	 
+			\item $ \Z_3 \times \Z_4 $ is of order \_\_\_.\\
+			12
+			\item The element $ (4,2) $ of $ \Z_{12} \times \Z_8 $ has order \_\_\_.\\
+			12
+			\item The Klein 4-group is isomorphic to $ \Z \_\_ \times \Z\_\_ $.\\
+			2, 2
+			\item $ \Z_2 \times \Z \times \Z_4 $ has \_\_\_ elements of finite order.\\
+			8
+     	\end{enumerate}
+	 
+	 \item[11.15] Find the maximum possible order for some element of $ \Z_4 \times \Z_6 $.
+	  As 4 and 6 are not relatively prime, $ \Z_4 \times \Z_6 $ is not cyclic and has no element of order 24. Thus, the maximum possible order is lcm(4,6) = 12. 
+	 \item[11.16] Are the groups $ \Z_2\times\Z_{12} $ and $ \Z_4\times\Z_6 $ isomorphic? Why or why not?
+	  Yes, both are isomorphic. As $\Z_2 \times \Z_{12} \simeq \Z_2 \times \Z_3 \times \Z_4$ and $
+	  \Z_4 \times \Z_6 \simeq \Z_4 \times \Z_3 \times \Z_2$\\
+	  Thus,  $\Z_2 \times \Z_{12} \simeq \Z_4 \times \Z_6$
+	 \item[11.46] Prove the direct product of abelian groups is abelian.
+	 Let each $ G_i$ be an abelian group 
+	 \[G_1 \times \cdots \times G_n\]
+	 \[\Rightarrow(a_1, \dots, a_n) \cdot (b_1, \dots, b_n) = (b_1, \dots, b_n)  \cdot (a_1, \dots, a_n)\]
+	 \[\Rightarrow(a_1b_1, \dots, a_nb_n) = (b_1a_1, \dots, b_na_n)\]
+	 \[\Rightarrow \forall i, a_ib_i = b_ia_i \]
+	 Thus, as the components are abelian the groups are abelian as well.
+\end{enumerate}
+\end{document}
