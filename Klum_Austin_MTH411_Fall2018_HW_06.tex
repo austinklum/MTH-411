@@ -56,7 +56,42 @@
 	$(1,3,4,7,8,6,5,2)$ and $ (1,2)(1,5)(1,6)(1,8)(1,7)(1,4)(1,3) $
 	
 	\item[9.19] Complete figure 9.22 of the Cayley digraph for the alternating group $ A_4 $ using the generating set $ S = \{(1,2,3),(1,2)(3,4)\} $
+	\item[]
+	  \begin{tikzpicture}
+	[scale=.9,auto=left]
+	\node (1) at (10,13) {(1,2,3)};
+	\node (2)at (6,13)  {(1)};
+	\node (3)at (8,11)  {(1,3,2)};
+	\node (4) at (12,1) {(1,2,4)};
+	\node (5) at (14,4)  {(1,3,4)};
+	\node (6) at (11,4)  {(1,4)(2,3)};'
+	\node (7) at (8,9) {(1,4,3)};
+	\node (8) at (10,7)  {(1,3)(2,4)};
+	\node (9) at (6,7) {(1,4,2)};
+	\node (10) at (2,4) {(1,2)(3,4)};
+	\node (11) at (5,4) {(2,4,3)};'
+	\node (12) at (4,1) {(1,4,3)};
 	
+	\draw[->] (2) to (1);
+	\draw[->] (1) to (3);
+	\draw[->] (3) to (2);
+	\draw[->] (7) to (8);
+	\draw[->] (8) to (9);
+	\draw[->] (9) to (7);
+	\draw[->] (10) to (11);
+	\draw[->] (11) to (12);
+	\draw[->] (12) to (10);
+	\draw[->] (6) to (5);
+	\draw[->] (5) to (4);
+	\draw[->] (4) to (6);
+	\draw[dashed] (11) to (9);
+	\draw[dashed] (2) to (10);
+	\draw[dashed] (12) to (4);
+	\draw[dashed] (6) to (8);
+	\draw[dashed] (5) to (1);
+	\draw[dashed] (7) to (3);
+	
+	\end{tikzpicture}
 	\item[9.20-22] Correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
 	
 	\item[9.20] For a permutation $ \sigma $ of a set $ A $, an \textit{orbit} of $ \sigma $ is a nonempty subset of $ A $ that is mapped onto itself by $ \sigma $\\

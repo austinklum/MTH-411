@@ -1,0 +1,34 @@
+%This is a Latex file.
+\documentclass[12pt]{article}
+\usepackage{latexsym,fancyhdr,amsmath,amsfonts,dsfont,amsthm,amssymb,mathrsfs,mathtools}
+\usepackage[margin=0.94in]{geometry}
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{tikz}
+\usepackage{url, hyperref}
+
+\parindent 0pt
+
+\pagestyle{fancy} \lhead{\sf MTH 411} \chead{\sf Homework \#02}
+\rhead{\sf Due: Tuesday 9/25/2018} \lfoot{} \cfoot{} \rfoot{}
+
+\newcommand{\N}{\mathds{N}}
+\newcommand{\Z}{\mathds{Z}}
+\renewcommand{\vec}[1]{\overrightarrow{#1}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+
+\begin{document}
+	
+	\begin{enumerate}
+		\item[5]
+		Suppose $ xH \cap yH \not = \emptyset $. Then $ \exists z \in xH \cap bH \Rightarrow \exists h_1,h_2\in H $ such that $ z = xh_1 $ and $ z=bh_2 $. Thus,
+		 \[x=zh_1^{-1}=yh_2h_1^{-1} \text{ and } xH=yh_2h_1^{-1}H=y(h_2h_1^{-1}H)=yH\]
+		 Therefore, $ xH = yH $
+		 \item[6]
+		 Suppose that $ x^{-1}y =h \in H$. Let $ xk \in xH $ with $ k \in H $. Then we have, $ xk = (yh^{-1})k = y(h^{-1}k)\in bH $. Thus, $ xH \subseteq yH $\\
+		 The proof of $ yH\subseteq xH $ is similar.\\
+		 Therefore, $ xH = yH $
+	 	\end{enumerate}
+\end{document}

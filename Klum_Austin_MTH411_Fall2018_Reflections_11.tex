@@ -1,0 +1,76 @@
+%This is a Latex file.
+\documentclass[11pt]{article}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{dsfont}
+\usepackage{fancyhdr}
+\usepackage[margin=1in]{geometry}
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{tikz}
+\usepackage{url,hyperref}
+
+\theoremstyle{plain}
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\pagestyle{fancy} 
+\lhead{\sf Austin Klum} \chead{\sf Reflection\#11} \rhead{\sf Fall 2018 MTH 411} 
+\lfoot{} \cfoot{\thepage} \rfoot{}
+
+%% See Page 3 of Fraleigh
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\Rplus}{\mathbb{R^+}}
+\newcommand{\Qplus}{\mathbb{Q^+}}
+\newcommand{\Zplus}{\mathbb{Z^+}}
+
+\newcommand{\Cstar}{\mathbb{C^*}}
+\newcommand{\Rstar}{\mathbb{R^*}}
+\newcommand{\Qstar}{\mathbb{Q^*}}
+\newcommand{\Zstar}{\mathbb{Z^*}}
+
+
+
+\begin{document}
+
+Your weekly reflections are due every Sunday 11:59pm in the appropriate D2L Dropbox. They should consist of two sections (each of which can be further divided into subsections) as described in detail at the start of lecture 2.
+
+\section{Reflection/\href{https://en.wikipedia.org/wiki/Logbook}{Logbook}/Diary}
+
+\begin{itemize}
+\item What did you find neat/cool/beautiful/incredible/\dots?
+\item Generate questions/conjectures based on your reading of the text, my notes, and other sources (online, library, faculty, peers).
+\item Try and answer some of them! 
+\item Strive to discover connections with the math from your past.\\
+Here are some sample sentence starters: ``This reminds me of \dots from class \dots \dots because \dots'' and ``I used to think \dots but now I think \dots because \dots''.
+
+\end{itemize}
+
+\section{Letter to Dr. Fraleigh}
+
+\begin{itemize}
+\item Comments based on your reading of Fraleigh. 
+\item What did you find neat/cool/beautiful/incredible/\dots?
+\item Comments on clarity or lack thereof.
+\item Suggestions for improvement. This can be retroactive, based on future understanding and ``AHA'' moments!
+\item Did you find any typos? Were there any words or symbols used that did not make sense? Did you figure out what those words meant (either by looking through the index, or pursuing an external resource).
+\end{itemize}
+
+\clearpage
+
+\section{Reflection/Logbook/Diary}
+I was happy to see what was essentially review in the first few paragraphs. The only change was applying the idea of homomorphisms from sets to groups, which in truth, really is the same thing. I found the trivial homomorphism to be similar to many other trivial properties, as they always relate to the identity.
+I found the homomorphism between $ S_n $ and $ \Z_n $ interesting. I was reminded of Computer Science with the 0 and 1 being used to determine if a number is odd or even. This gives the exact same mapping with 0 being mapped to an even permutation and 1 being mapped to an odd permutation. The evaluation homomorphism reminds me of C programming and how you can pass a function into a function as a parameter. I had a hard time following the explanation on why reduction modulo $ n $ was also considered a homomorphism. 
+I liked the obvious relations about kernals from linear algebra and group theory. I struggled to recall complete and understand throughly what the kernal represents. I was not satisfied with the definition or the graphics provided on describing kernals. I thought the new way of determination if some groups are isomorphic to one another was easier to find and complete. This new way requires you find a homomorphism, show there is an identity element and the the function is surjective. This is different as before we need the additional proof of being injective. I am not complete confident in my understanding of a normal group. I believe this stems from my uncertainty in left and right cosets. I understand how a group is split up from a coset, but I have hard time understanding why the left and right cosets differ. I also found the corollary stating how if $ \phi $ is a group homomorphism, then Ker($\phi$) is a normal subgroup of $ G $, to be powerful and useful, but once again I am unsure why such a statement holds true.
+\section{Letter to Fraleigh}
+Dear Dr. Fraleigh,\\
+\\
+I think it's very intriguing how you have repeated much about homomorphisms in the opening few paragraphs. I would have expected a simple recall and restatement of the definition. I found relating prior knowledge of mathematics to homomorphisms to be very helpful. I liked the examples pertaining to linear algebra as well as those that related to calculus. As much as I liked these problems, as the material looked more familiar, I did have to spend a fair amount of recalling the previously seen mathematics to remember how some of the properties and ideas behind them worked. After describing the properties of homomorphisms. I found putting the properties of homomorphisms into a simply layman's slogan was helpful, "Loosely speaking [the homomorphism] $ \phi $ preserves the identity element, inverses, and subgroups." I liked the attempt to put the Kernal of $ \phi $ into geometric sense. I found this particular figure to be hard to understand, but these ideas are helpful to see visually. I appreciate the historical note. The historical note helps put ideas into context. For example it took nearly forty years to standardize the ideas of being normal group. This makes having a harder time understanding what's going on easier to bear, as those who had far greater genius still struggled to complete what I am now learning.\\
+\\
+Sincerely,\\
+Austin Klum
+
+
+\end{document}

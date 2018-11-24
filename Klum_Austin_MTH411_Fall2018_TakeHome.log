@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.4.24)  15 NOV 2018 22:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.4.24)  16 NOV 2018 00:28
 entering extended mode
-**./Klum_Austin_MTH411_Fall2018_HW_06.tex
-(Klum_Austin_MTH411_Fall2018_HW_06.tex
+**./Klum_Austin_MTH411_Fall2018_TakeHome.tex
+(Klum_Austin_MTH411_Fall2018_TakeHome.tex
 LaTeX2e <2017-04-15>
 Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
 (D:\Programs\MiKTeX2.9.6520\tex\latex\base\article.cls
@@ -481,15 +481,7 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 (D:\Programs\MiKTeX2.9.6520\tex\generic\pgf\frontendlayer\tikz\libraries\tikzli
 brarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-)))
-(D:\Programs\MiKTeX2.9.6520\tex\generic\pgf\libraries\pgflibraryarrows.meta.cod
-e.tex
-File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
-\pgfarrowinset=\dimen177
-\pgfarrowlength=\dimen178
-\pgfarrowwidth=\dimen179
-\pgfarrowlinewidth=\dimen180
-) (D:\Programs\MiKTeX2.9.6520\tex\latex\url\url.sty
+))) (D:\Programs\MiKTeX2.9.6520\tex\latex\url\url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -545,7 +537,7 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (D:\Programs\MiKTeX2.9.6520\tex\latex\oberdiek\kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen181
+\@linkdim=\dimen177
 \Hy@linkcounter=\count125
 \Hy@pagecounter=\count126
 
@@ -566,10 +558,10 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
 \c@Hy@tempcnt=\count128
 LaTeX Info: Redefining \url on input line 5104.
-\XeTeXLinkMargin=\dimen182
+\XeTeXLinkMargin=\dimen178
 \Fld@menulength=\count129
-\Field@Width=\dimen183
-\Fld@charsize=\dimen184
+\Field@Width=\dimen179
+\Fld@charsize=\dimen180
 Package hyperref Info: Hyper figures OFF on input line 6358.
 Package hyperref Info: Link nesting OFF on input line 6363.
 Package hyperref Info: Hyper index ON on input line 6366.
@@ -598,31 +590,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip62
 )
-(D:\Programs\MiKTeX2.9.6520\tex\latex\float\float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count135
-\float@exts=\toks39
-\float@box=\box39
-\@float@everytoks=\toks40
-\@floatcapt=\box40
-)
-(Klum_Austin_MTH411_Fall2018_HW_06.aux)
-\openout1 = `Klum_Austin_MTH411_Fall2018_HW_06.aux'.
+(Klum_Austin_MTH411_Fall2018_TakeHome.aux)
+\openout1 = `Klum_Austin_MTH411_Fall2018_TakeHome.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -660,21 +644,21 @@ LaTeX Font Info:    ... okay on input line 35.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 35.
+(lastpage)             ! on input line 22.
 ABD: EveryShipout initializing macros
 (D:\Programs\MiKTeX2.9.6520\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count136
-\scratchdimen=\dimen185
-\scratchbox=\box41
-\nofMPsegments=\count137
-\nofMParguments=\count138
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count139
-\MPscratchDim=\dimen186
-\MPnumerator=\count140
-\makeMPintoPDFobject=\count141
-\everyMPtoPDFconversion=\toks42
+\scratchcounter=\count135
+\scratchdimen=\dimen181
+\scratchbox=\box39
+\nofMPsegments=\count136
+\nofMParguments=\count137
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count138
+\MPscratchDim=\dimen182
+\MPnumerator=\count139
+\makeMPintoPDFobject=\count140
+\everyMPtoPDFconversion=\toks40
 ) (D:\Programs\MiKTeX2.9.6520\tex\latex\oberdiek\epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -688,8 +672,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring OFF on input line 35.
+\AtBeginShipoutBox=\box40
+Package hyperref Info: Link coloring OFF on input line 22.
 
 (D:\Programs\MiKTeX2.9.6520\tex\latex\hyperref\nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -697,43 +681,39 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (D:\Programs\MiKTeX2.9.6520\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count142
+\c@section@level=\count141
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
 
-(Klum_Austin_MTH411_Fall2018_HW_06.out) (Klum_Austin_MTH411_Fall2018_HW_06.out)
+(Klum_Austin_MTH411_Fall2018_TakeHome.out)
+(Klum_Austin_MTH411_Fall2018_TakeHome.out)
 \@outlinefile=\write4
-\openout4 = `Klum_Austin_MTH411_Fall2018_HW_06.out'.
+\openout4 = `Klum_Austin_MTH411_Fall2018_TakeHome.out'.
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 37.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 26.
+
 (D:\Programs\MiKTeX2.9.6520\tex\latex\base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
 
 (D:\Programs\MiKTeX2.9.6520\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 37.
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
 
 (D:\Programs\MiKTeX2.9.6520\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 37.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 26.
 
 (D:\Programs\MiKTeX2.9.6520\tex\latex\jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 43.
 
-(D:\Programs\MiKTeX2.9.6520\tex\latex\doublestroke\udsrom.fd
-File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-)
-Missing character: There is no ' in font nullfont!
-Missing character: There is no ' in font nullfont!
-
+AED: lastpage setting LastPage
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -743,102 +723,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{C:/Users/Austin Klum/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 142--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--152
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[3]
-Overfull \hbox (80.31187pt too wide) in paragraph at lines 172--176
-[]\OT1/cmr/m/n/12 Repeat for the group $\U/dsrom/m/n/12 Z[] \OMS/cmsy/m/n/12  
-\U/dsrom/m/n/12 Z[]$ $\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \O
-T1/cmr/m/n/12 0)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cm
-r/m/n/12 1)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n
-/12 2)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3
-)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0)\OML
-/cmm/m/it/12 ; \OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)\OML/cmm/
-m/it/12 ; \OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)\OML/cmm/m/it/
-12 ; \OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)\OML/cmm/m/it/12 ; 
-\OT1/cmr/m/n/12 (2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0)\OML/cmm/m/it/12 ; \OT1/
-cmr/m/n/12 (2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)\OML/cmm/m/it/12 ; \OT1/cmr/m
-/n/12 (2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12
- (2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)\OMS/cmsy/m/n/12 g$ 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[4] 
-AED: lastpage setting LastPage
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
- (Klum_Austin_MTH411_Fall2018_HW_06.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 204.
-Package rerunfilecheck Info: File `Klum_Austin_MTH411_Fall2018_HW_06.out' has n
-ot changed.
+(Klum_Austin_MTH411_Fall2018_TakeHome.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
+Package rerunfilecheck Info: File `Klum_Austin_MTH411_Fall2018_TakeHome.out' ha
+s not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 17464 strings out of 493312
- 325945 string characters out of 3139339
- 400157 words of memory out of 3000000
- 20681 multiletter control sequences out of 15000+200000
- 10346 words of font info for 44 fonts, out of 3000000 for 9000
+ 16937 strings out of 493312
+ 314009 string characters out of 3139339
+ 381553 words of memory out of 3000000
+ 20178 multiletter control sequences out of 15000+200000
+ 9404 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,67p,445b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Austin Klum\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\double
-stroke\dpi600\dsrom12.pk><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfont
-s/cm/cmex10.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmmi
-12.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:
-/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Programs/
-MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programs/MiKTeX2.9.6
-520/fonts/type1/public/amsfonts/cm/cmss12.pfb><D:/Programs/MiKTeX2.9.6520/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfo
-nts/cm/cmti12.pfb>
-Output written on Klum_Austin_MTH411_Fall2018_HW_06.pdf (5 pages, 117938 bytes)
-.
+ 55i,11n,54p,446b,325s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Programs/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Pro
+grams/MiKTeX2.9.6520/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Programs/MiKT
+eX2.9.6520/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programs/MiKTeX2.9.6520/
+fonts/type1/public/amsfonts/cm/cmss12.pfb><D:/Programs/MiKTeX2.9.6520/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb><D:/Programs/MiKTeX2.9.6520/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb>
+Output written on Klum_Austin_MTH411_Fall2018_TakeHome.pdf (1 page, 61165 bytes
+).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
+ 38 PDF objects out of 1000 (max. 8388607)
+ 2 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

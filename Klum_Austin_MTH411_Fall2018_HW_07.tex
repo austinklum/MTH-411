@@ -1,0 +1,76 @@
+%This is a Latex file.
+\documentclass[12pt]{article}
+\usepackage{
+	latexsym,
+	fancyhdr,
+	amsmath,
+	amsfonts,
+	dsfont,
+	amsthm,
+	amssymb,
+	mathrsfs,
+	mathtools
+}
+\usepackage[margin=0.94in]{geometry}
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{url, hyperref}
+\usepackage{float}
+
+\parindent 0pt
+
+\pagestyle{fancy} \lhead{\sf MTH 411} \chead{\sf Homework \#07}
+\rhead{\sf Due: Friday 11/26/2018} \lfoot{} \cfoot{} \rfoot{}
+
+\newcommand{\N}{\mathds{N}}
+\newcommand{\Z}{\mathds{Z}}
+\renewcommand{\vec}[1]{\overrightarrow{#1}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\G}{\mathbb{G}}
+\newcommand{\Q}{\mathbb{Q}}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+
+\begin{document}
+\begin{enumerate}
+	\item[]Determine weather the given map $ \phi $ is a homomorphism. 
+	\item[13.07] Let $ \phi _ { i } : G _ { i } \rightarrow G _ { 1 } \times G _ { 2 } \times \cdots \times G _ { i } \times \cdots \times G _ R $ be given by $ \phi _ { i } \left( g _ { i } \right) = \left( e _ { 1 } , e _ { 2 } , \ldots , g _ { i } , \ldots , e _ R \right) ,$ where $ g _ { i } \in G_i $ and $e _ { j } $ is the identity element of $G _ { j }$
+	
+	\item[13.08] Let $ G $  be any group and let $ \phi : G \rightarrow G $  be given by $ \phi ( g ) = g ^ { - 1}$ for $g \in G $
+	
+	\item[13.12] Let $ M _ { n } $  be the additive group of all $ n \times n $  matrices with real entries, and let $ \R $  be the additive group of real numbers. Let $ \phi ( A ) = \operatorname { det } ( A ) , $  the determinant of $A , $  for $ A \in M _ { n }$
+	
+	\item[13.13]Let $ M _ { n } $ and $ \R $ be as in Exercise 12 . Let $ \phi ( A ) = \operatorname { tr } ( A ) $ for $ A \in M _ { n } , $ where the trace tr($A$) is the sum of the elements on the main diagonal of $ A , $ from the upper-left to the lower-right corner.
+	
+	\item[13.14] Let $ G L ( n , \R ) $ be the multiplicative group of invertible $ n \times n $ matrices, and let $ \R $ be the additive group of real numbers. Let $ \phi : G L ( n , \R ) \rightarrow \R $ be given by$ \phi ( A ) = \operatorname { tr } ( A ) ,$ where  tr $( A ) $ is defined in Exercise 13
+	
+	\item[13.30] A \textit{homomorphism} is a map such that $ \phi ( x y ) = \phi ( x ) \phi ( y ) $
+	
+	\item[13.31] Let $ \phi : G \rightarrow G ^ { \prime } $ be a homomorphism of groups. The \textit{kernel} of $ \phi $ is$ \{ x \in G | \phi ( x ) = e ^ { \prime } \} $ where $ e ^ { \prime } $ is the identity in $ G^{\prime} $
+	
+	\item[13.44] Let $ \phi : G \rightarrow G ^ { \prime } $ be a group homomorphism. Show that if $ \left| G \right| $ is finite, then, $ | \phi [ G ] | $ is finite and is a divisor of $ | G | $
+	\item[13.45] Let $ \phi : G \rightarrow G ^ { \prime } $ be a group homomorphism. Show that if $ \left| G ^ { \prime } \right| $ is finite, then, $ | \phi [ G ] | $ is finite and is a divisor of $ | G' | $
+	
+	\item[13.48]The sign of an even permutation is $ + 1 $ and the sign of an odd permutation is $ - 1 . $ Observe that the map $ \operatorname { sgn } _ { n } : S _ { n } \rightarrow \{ 1 , - 1 \} $ defined by $ \operatorname { sgn } _ { n } ( \sigma ) = \operatorname { sign } $ of $ \sigma $ is a homomorphism of $ S _ { n } $ onto the multiplicative group$ \{ 1 , - 1 \}\\ $ What is the Kernel?
+	
+	\item[13.50]Let $ \phi : G \rightarrow H $ be a group homomorphism. Show that$ \phi [ G ] $ is abelian if and only if for all $ x , y \in G , $ we have $ x y x ^ { - 1 } y ^ { - 1 } \in \operatorname { Ker } ( \phi ) $
+	
+	\item[14.06]
+	
+	\item[14.16]
+	
+	\item[14.17]
+	
+	\item[14.18]
+	
+	\item[14.19]
+	
+	\item[14.24]
+	
+	\item[14.37]
+	
+	\item[14.40]
+
+\end{enumerate}
+\end{document}
