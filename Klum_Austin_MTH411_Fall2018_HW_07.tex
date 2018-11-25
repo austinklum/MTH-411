@@ -35,42 +35,116 @@
 \begin{document}
 \begin{enumerate}
 	\item[]Determine weather the given map $ \phi $ is a homomorphism. 
-	\item[13.07] Let $ \phi _ { i } : G _ { i } \rightarrow G _ { 1 } \times G _ { 2 } \times \cdots \times G _ { i } \times \cdots \times G _ R $ be given by $ \phi _ { i } \left( g _ { i } \right) = \left( e _ { 1 } , e _ { 2 } , \ldots , g _ { i } , \ldots , e _ R \right) ,$ where $ g _ { i } \in G_i $ and $e _ { j } $ is the identity element of $G _ { j }$
+	\item[13.07] Let $ \phi _ { i } : G _ { i } \rightarrow G _ { 1 } \times G _ { 2 } \times \cdots \times G _ { i } \times \cdots \times G _ R $ be given by $ \phi _ { i } \left( g _ { i } \right) = \left( e _ { 1 } , e _ { 2 } , \ldots , g _ { i } , \ldots , e _ R \right) ,$ where $ g _ { i } \in G_i $ and $e _ { j } $ is the identity element of $G _ { j }$\\
+	Let $ a,b\in G_i $. Observe. 
+	\begin{align*}
+		\phi(ab) &= (e_1, e_2,\cdots,ab,\cdots , e_r)\\
+				 &= (e_1, e_2, \cdots,a,\cdots,e_r)(e_1, e_2,\cdots,b,\cdots, e_r)\\
+				 &= \phi(a)\phi(b)
+	\end{align*}
+	Thus, a homomorphism
+	\item[13.08] Let $ G $  be any group and let $ \phi : G \rightarrow G $  be given by $ \phi ( g ) = g ^ { - 1}$ for $g \in G $\\
+	If $ G $ is abelian, let $ a,b\in G $. Notice.
+	\[\phi(ab)=(ab)^{-1}=b^{-1}a^{-1}=\phi(b)\phi(a)\]
+	Thus, a homomorphism if $ G $ is abelian.
+	\item[13.12] Let $ M _ { n } $  be the additive group of all $ n \times n $  matrices with real entries, and let $ \R $  be the additive group of real numbers. Let $ \phi ( A ) = \operatorname { det } ( A ) , $  the determinant of $A , $  for $ A \in M _ { n }$\\
+	Let $ A = \begin{bmatrix}
+		1 & 0 \\
+		0 & 1
+		\end{bmatrix} $ and $ B = \begin{bmatrix}
+			1 & 1 \\
+			0 & 1
+		\end{bmatrix} $ Then,
+		\[\phi(A+B)=\det(A+B)=4\] but
+		\[\phi(A)+\phi(B)=\det(A)+\det(B)= 1+1=2\]
+		Thus, not a homomorphism.
+	\item[13.13]Let $ M _ { n } $ and $ \R $ be as in Exercise 12 . Let $ \phi ( A ) = \operatorname { tr } ( A ) $ for $ A \in M _ { n } , $ where the trace tr($A$) is the sum of the elements on the main diagonal of $ A , $ from the upper-left to the lower-right corner.\\
+	Let $ A = (a_{ij}) $ and $ B = (b_{ij})  $. Observe.
+	\begin{align*}
+		\phi(A+B) &= \textrm{tr}(A+B) \\
+				  &= \sum_{i=1}^n (a_{ii} + b_{ii})\\
+				  &= \sum_{i=1}^n a_{ii} + \sum_{i=1}^n b_{ii}\\
+				  &= \textrm{tr}(A)+\textrm{tr}(B)\\
+				  &= \phi(A) + \phi(B)
+	\end{align*}
+	Thus, a homomorphism.
+	\item[13.14] Let $ G L ( n , \R ) $ be the multiplicative group of invertible $ n \times n $ matrices, and let $ \R $ be the additive group of real numbers. Let $ \phi : G L ( n , \R ) \rightarrow \R $ be given by$ \phi ( A ) = \operatorname { tr } ( A ) ,$ where  tr $( A ) $ is defined in Exercise 13.\\
+	Notice, $ \phi(I_nI_n)=\phi(I_n)=\textrm{tr}(I_n)=n $ and $\phi(I_n) +\phi(I_n)=\textrm{tr}(I_n)+\textrm{tr}(I_n)=n+n=2n $\\
+	Thus, not a homomorphism.
 	
-	\item[13.08] Let $ G $  be any group and let $ \phi : G \rightarrow G $  be given by $ \phi ( g ) = g ^ { - 1}$ for $g \in G $
+	\item[13.30] A \textit{homomorphism} is a map such that $ \phi ( x y ) = \phi ( x ) \phi ( y ) $\\
+	A \textit{homomorphism} is a map from a group $ G $ into a group $ G' $ such that $ \phi ( x y ) = \phi ( x ) \phi ( y ) $
 	
-	\item[13.12] Let $ M _ { n } $  be the additive group of all $ n \times n $  matrices with real entries, and let $ \R $  be the additive group of real numbers. Let $ \phi ( A ) = \operatorname { det } ( A ) , $  the determinant of $A , $  for $ A \in M _ { n }$
-	
-	\item[13.13]Let $ M _ { n } $ and $ \R $ be as in Exercise 12 . Let $ \phi ( A ) = \operatorname { tr } ( A ) $ for $ A \in M _ { n } , $ where the trace tr($A$) is the sum of the elements on the main diagonal of $ A , $ from the upper-left to the lower-right corner.
-	
-	\item[13.14] Let $ G L ( n , \R ) $ be the multiplicative group of invertible $ n \times n $ matrices, and let $ \R $ be the additive group of real numbers. Let $ \phi : G L ( n , \R ) \rightarrow \R $ be given by$ \phi ( A ) = \operatorname { tr } ( A ) ,$ where  tr $( A ) $ is defined in Exercise 13
-	
-	\item[13.30] A \textit{homomorphism} is a map such that $ \phi ( x y ) = \phi ( x ) \phi ( y ) $
-	
-	\item[13.31] Let $ \phi : G \rightarrow G ^ { \prime } $ be a homomorphism of groups. The \textit{kernel} of $ \phi $ is$ \{ x \in G | \phi ( x ) = e ^ { \prime } \} $ where $ e ^ { \prime } $ is the identity in $ G^{\prime} $
-	
-	\item[13.44] Let $ \phi : G \rightarrow G ^ { \prime } $ be a group homomorphism. Show that if $ \left| G \right| $ is finite, then, $ | \phi [ G ] | $ is finite and is a divisor of $ | G | $
-	\item[13.45] Let $ \phi : G \rightarrow G ^ { \prime } $ be a group homomorphism. Show that if $ \left| G ^ { \prime } \right| $ is finite, then, $ | \phi [ G ] | $ is finite and is a divisor of $ | G' | $
+	\item[13.31] Let $ \phi : G \rightarrow G ^ { \prime } $ be a homomorphism of groups. The \textit{kernel} of $ \phi $ is $ \{ x \in G | \phi ( x ) = e ^ { \prime } \} $ where $ e ^ { \prime } $ is the identity in $ G^{\prime} $\\
+	Correct as stated.
+	\item[13.44] Let $ \phi : G \rightarrow G ^ { \prime } $ be a group homomorphism. Show that if $ \left| G \right| $ is finite, then, $ | \phi [ G ] | $ is finite and is a divisor of $ | G | $\\
+	Note that $ \phi[G] := \{\phi(x)|x\in G\}$ and we have $ |\phi[G]|\leq|G| $, thus $ \phi[G] $ must also be finite. By Theorem 13.15, we have $ |\phi[G]|=|G|/\ker(\phi)| $ and thus $ \phi[G] $ is a divisor of $ |G| $
+	\item[13.45] Let $ \phi : G \rightarrow G ^ { \prime } $ be a group homomorphism. Show that if $ \left| G ^ { \prime } \right| $ is finite, then, $ | \phi [ G ] | $ is finite and is a divisor of $ | G' | $\\
+	Note that $ \phi[G] := \{\phi(x)|x\in G\}$ and we have $ \phi[G]\subseteq G' $, thus $ \phi[G] $ must also be finite. By Lagrange's Theorem we have that $ |\phi[G]| $ is a divisor of $ |G'| $
 	
 	\item[13.48]The sign of an even permutation is $ + 1 $ and the sign of an odd permutation is $ - 1 . $ Observe that the map $ \operatorname { sgn } _ { n } : S _ { n } \rightarrow \{ 1 , - 1 \} $ defined by $ \operatorname { sgn } _ { n } ( \sigma ) = \operatorname { sign } $ of $ \sigma $ is a homomorphism of $ S _ { n } $ onto the multiplicative group$ \{ 1 , - 1 \}\\ $ What is the Kernel?
+		The $ \ker(sgn_n)= \{\sigma\in S_n | \sigma \textrm{is an even permutation.}\} $
+	\item[13.50]Let $ \phi : G \rightarrow H $ be a group homomorphism. Show that$ \phi [ G ] $ is abelian if and only if for all $ x , y \in G , $ we have $ x y x ^ { - 1 } y ^ { - 1 } \in \operatorname { Ker } ( \phi ) $\\
+	Assume $ \phi[G] $ is abelian. Let $x,y \in G$. Observe.
+	\begin{align*}
+		\phi(xyx^{-1}y^{-1}) &= \phi(x)\phi(y)\phi(x^{-1})\phi(y^{-1})\\
+							 &= \phi(y)\phi(x)\phi(x^{-1})\phi(y^{-1})\\
+							 &= \phi(y)\phi(xx^{-1})\phi(y^{-1})\\
+							 &= \phi(y)\phi(y^{-1})\\
+							 &= e
+	\end{align*}
+	Therefore, $ xyx^{-1}y^{-1}\in\ker(\phi) $\\
+	\\
+	Assume $ \forall x,y\in G, xyx^{-1}y^{-1}\in\ker(\phi) $. Then $ \phi( xyx^{-1}y^{-1})=e $ and $ \phi(x)\phi(y)\phi(x^{-1})\phi(y^{-1}) = e $.\\ Note, $ \phi(x)\phi(y)\phi(x)^{-1}\phi(y)^{-1}=e$.\\ We can rewrite $ \phi(x)^{-1}\phi(y)^{-1} $ as $ (\phi(y)\phi(x))^{-1} $.\\ Multiplying on the right by $ (\phi(y)\phi(x)) $ we have, $ \phi(x)\phi(y)=\phi(y)\phi(x) $.\\
+	Therefore, $ \phi[G] $ is abelian
+	\item[14.06] Find the order of the factor group, $( \Z_{ 12 } \times \Z_{ 18 })/\langle ( 4,3 ) \rangle $\\
+	As $ |\langle ( 4,3 ) \rangle| = 6 $ and $ |( \Z_{ 12 } \times \Z_{ 18 })|=216 $ we have $ 216/6 = 36 $
 	
-	\item[13.50]Let $ \phi : G \rightarrow H $ be a group homomorphism. Show that$ \phi [ G ] $ is abelian if and only if for all $ x , y \in G , $ we have $ x y x ^ { - 1 } y ^ { - 1 } \in \operatorname { Ker } ( \phi ) $
+	\item[14.16] Compute $i_{\rho_1}[H]$ for the subgroup $ H = \{\rho_0,\mu_1\}$ of the group $S_3$ of Example 8.7 .\\
+	$i_{\rho_1}(H)=\{\rho_0,\mu_2\}$
+	\item[14.17] A \textit{normal subgroup} $ H $ of $ G $ is one satisfying $hG = Gh $ for all $ h \in H$\\
+	A \textit{normal subgroup} $ H $ of a group $ G $ is a subgroup satisfying $ gH = Hg $ for all $ g \in G $
+	\item[14.18] A \textit{normal subgroup} $ H $ of $ G $ is one satisfying $ g^{-1}hg\in H $ for all $ h\in H $ and all $ g\in G $\\
+	 Correct as stated.
+	\item[14.19] An \textit{automorphism} of a group $ G $ is a homomorphism mapping $ G $ into $ G $ \\
+	An \textit{automorphism} of a group $ G $ is a isomorphism mapping $ G $ onto $ G $ 
+	\item[14.24] Show that $ A_n $ is a normal subgroup of $ S_n $ and compute $ S_n/A_n $;that is, find a known group to which $ S_n/A_n $ is isomorphic.\\
+	If $ n =1 $ we have $ S_1=A_1 $ which gives us that $ A_1 $ is a normal subgroup of $ S_1 $\\
+	If $ n \geq 2 $, we know that $ |A_n|=|S_n|/2 $. Thus, there are only 2 cosets of $ A_n $, being $ A_n $ itself and the odd permutations of $ S_n $. Then, the left and right cosets must be the same, hence $ A_n $ is a normal subgroup of $ S_n $.\\
+	Notice, $ S_n/A_n $ has order 2, and thus is isomorphic to $ \Z_2 $
+	\item[14.37a] Show that all automorphisms of a group $ G $ form a group under function composition.\\
+	Let $ G,G' $ and $ G'' $ be groups, $ a,b\in G $, and let $ \phi : G\rightarrow G' $ and $ \gamma : G' \rightarrow G'' $ be homomorphisms. Then, 
+		\[\gamma\phi(ab)=\gamma(\phi(ab))=\gamma(\phi(a)\phi(b))=\gamma(\phi(a))\gamma(\phi(b))=\gamma\phi(a)\gamma\phi(b)\]
+	Thus, the composition of two automorphisms of $ G $ is a homomorphism of $ G$ into $ G $\\
+	As each automorphism is a bijection, their composition also is a bijection, and then must be automorphism of $ G $. From this, we have that compostion gives a binary operation on the set
+	of all automorphisms of $ G $.\\
+	Consider id$_G : G \rightarrow G  $. Let $ phi $ be in the set of all automorphisms of $ G $. Then $ \phi \circ $ id$_G $ = $ \phi = $ id$_G \circ \phi $.\\
+	Thus, id$_G$ is an automorphism.\\
+	Also, notice $ \phi \circ \phi^{-1}=\phi^{-1}\circ\phi = $ id$_G$\\
+	Thus, the automorphisms form a group under function composition
 	
-	\item[14.06]
+	\item[14.37b] Show that the inner automorphisms of a group $ G $ form a normal subgroup of the group of all automorphisms of $ G $ under function composition.\\
+	For $ a,b,x\in\G $, we have \[i_a(i_b(x))=i_a(bxb^{-1})=a(bxb^{-1})a^{-1}=(ab)x(b^{-1}a^{-1})=(ab)x(ab)^{-1}=i_{ab}(x)\]
+	Thus, the composition of two inner automorphisms is still an inner automorphism.\\
+	Notice $ i_e $ is the identity\\
+	Notice, $ i_ai_{a^{-1}} =i_e$, thus $ i_{a^{-1}} $ is the inverse of $ i_a $\\
+	Thus, under function composition the set of inner automorphisms is a group.\\
+	Let $ a,x\in G $ and let $ \phi $ be an automorphism of $ G $. Observe. 
+	 \[(\phi i_a\phi^{-1})(x)=\phi(i_a(\phi^{-1}(x)))=\phi(a\phi^{-1}(x)a^{-1})=\phi(a)\phi(\phi^{-1}(x))\phi(a^{-1})=\phi(a)x(\phi(a))^{-1}=i_{\phi(a)}(x)\]
+	 Then, $\phi i_a\phi^{-1}=i_{\phi(a)}$\\
+	 Thus, the inner automorphisms are a normal subgroup of the automorphism group of $ G $.
+	\item[14.40a]The $ n \times n$ matrices with determinant 1 form a normal subgroup of $GL(n,\R) $\\
+	Let $ H $ be the subset of $ GL(n,\R) $ consisting of $ n\times n $ matrices with determinant 1. Let $ A,B\in H $. Notice, $ \det(AB) = \det(A)\det(B)$ and thus must be closed under matrix multiplication. Observe that $ \det(I_n) = 1 $ and thus is the identity element in $ H $. The inverse of $ A $ is $ A^{-1} $. Notice, $ \det(A^{-1}) = 1/\det(A)=1/1=1 $. Thus $ A^{-1}\in H $ \\
+	Therefore, $ H \leq GL(n,\R) $\\
+	\\
+	Let $ A\in H $ and $ B\in GL(n,\R) $. Note, $ \det(B)\not= 0 $. Then, $ \det(BAB^{-1}) = \det(B)\det(A)\det(B^{-1})=\det(B)\det(A)(1/\det(B))=\det(A)=1 $. Thus, $ BAB^{-1}\in H $.\\
+	Thus $ H $ is a normal subgroup of $ GL(n,\R) $.
 	
-	\item[14.16]
-	
-	\item[14.17]
-	
-	\item[14.18]
-	
-	\item[14.19]
-	
-	\item[14.24]
-	
-	\item[14.37]
-	
-	\item[14.40]
-
+	\item[14.40b] The $ n \times n$ matrices with determinant $ \pm $ 1 form a normal subgroup of $GL(n,\R) $\\
+		Let $ H $ be the subset of $ GL(n,\R) $ consisting of $ n\times n $ matrices with determinant $ \pm 1 $. Let $ A,B\in H $. Notice, $ \det(AB) = \det(A)\det(B)$ and thus must be closed under matrix multiplication. Observe that $ \det(I_n) = 1 $ and thus is the identity element in $ H $. The inverse of $ A $ is $ A^{-1} $. Notice, $ \det(A^{-1}) = 1/\det(A)$. Which must be either $ 1 $ or $ -1 $. Thus $ A^{-1}\in H $ \\
+	Therefore, $ H \leq GL(n,\R) $\\
+	\\
+	Let $ A\in H $ and $ B\in GL(n,\R) $. Note, $ \det(B)\not= 0 $. Then, $ \det(BAB^{-1}) = \det(B)\det(A)\det(B^{-1})=\det(B)\det(A)(1/\det(B))=\det(A) $. Which must be either 1 or $ -1 $ Thus, $ BAB^{-1}\in H $.\\
+Thus $ H $ is a normal subgroup of $ GL(n,\R) $.
 \end{enumerate}
 \end{document}
